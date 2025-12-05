@@ -12,9 +12,9 @@ import {
 
 export default function HeroSection() {
   return (
-    <Carousel className="relative w-full h-[500px]">
+    <Carousel className="relative w-full h-[100vh]">
       <CarouselContent>
-        <CarouselItem className="relative w-full h-[500px]">
+        <CarouselItem className="relative w-full h-[100vh]">
           <img src="./../images/hero1.jpg" alt="Hero Image 1" className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-black-500 bg-opacity-20 flex items-center justify-center">
@@ -36,7 +36,7 @@ export default function HeroSection() {
           </div>
           </div>
         </CarouselItem>
-        <CarouselItem className="relative w-full h-[500px]">
+        <CarouselItem className="relative w-full h-[100vh]">
           <img src="./../images/hero2.jpg" alt="Hero Image 2" className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-blue bg-opacity-50 flex items-center justify-center">
@@ -58,7 +58,7 @@ export default function HeroSection() {
             </div>
             </div>
         </CarouselItem>
-        <CarouselItem className="relative w-full h-[500px]">
+        <CarouselItem className="relative w-full h-[100vh]">
           <img src="./../images/hero3.jpg" alt="Hero Image 3" className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-blue bg-opacity-50 flex items-center justify-center">
