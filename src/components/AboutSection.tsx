@@ -1,44 +1,49 @@
 
-
 export default function AboutSection() {
     return (
-        <section className="py-12 bg-white-100">
+        <section className="py-16 bg-white">
             <div className="container mx-auto px-4">
-                <div className="text-center mb-10">
-                    <h4 className="text-blue-500">A PROPOS DE NOUS</h4>
-                    <h2 className="text-3xl md:text-4xl font-bold mb-6">Découvrez Afrix Global</h2>
+                {/* TITRE */}
+                <div className="text-center mb-12">
+                    <h4 className="text-blue-600 font-semibold tracking-wide">A PROPOS DE NOUS</h4>
+                    <h2 className="text-3xl md:text-4xl font-bold mt-2">Découvrez Afrix Global</h2>
                 </div>
-                <div className="flex flex-col md:flex-row items-center justify-center gap-4 mb-8">
-                    {/* Div pour l'image avec ombre */}
-                    <div className="w-full md:w-1/2 flex justify-center">
-                        <div className="shadow-[-10px_10px_9px_rgba(0,0,0,0.1)] border-1 border-[rgba(0,0,0,0.1)] rounded-lg overflow-hidden w-90 h-90 md:w-96 md:h-96">
-                            <img src="./../logo.png" alt="Description Afrix-Global"
-                                className="w-full h-auto object-cover"
+
+                <div className="flex flex-col md:flex-row items-center gap-10">
+                    <div className="w-full md:w-1/2 flex justify-center relative">
+
+                        {/* Image principale */}
+                        <div className="w-full h-80 md:w-96 md:h-96 rounded-xl overflow-hidden shadow-lg">
+                            <img src="./../images/service1.jpg" alt="Afrix Global" className="w-full h-full object-cover"
+                            />
+                        </div>
+
+                        {/* Petite image superposée en bas à droite */}
+                        <div className="absolute -bottom-5 -right-0 w-40 h-60 md:w-48 md:h-58 rounded-xl overflow-hidden shadow-xl bg-white border-4 border-gray-100">
+                            <img src="./../logo.png" alt="Service" className="w-full h-full object-cover"
                             />
                         </div>
                     </div>
 
-                    {/* Div pour le texte */}
+                    {/* --- TEXTE --- */}
                     <div className="w-full md:w-1/2">
-                        <p className="text-lg md:text-xl text-gray-700 mb-4">
-                            Afrix-Global est une organisation dédiée à la formation et à l'insertion professionnelle
-                             dans le secteur du numérique. Nous offrons 
-                             des programmes de formation innovants et adaptés 
-                             aux besoins du marché, visant à préparer les individus 
-                             aux métiers les plus demandés du secteur digital.
+                        <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+                            Afrix-Global est une organisation dédiée à la formation et à l'insertion
+                            professionnelle dans le secteur du numérique. Nous offrons des programmes
+                            innovants adaptés aux besoins du marché digital.
                         </p>
-                        <p className="text-lg md:text-xl text-gray-700">
-                            Notre mission est de fournir des opportunités 
-                            d'apprentissage accessibles et de qualité, en 
-                            mettant l'accent sur le développement des compétences
-                             pratiques et l'employabilité. Nous collaborons avec 
-                             des entreprises et des experts du secteur pour garantir 
-                             que nos formations répondent aux exigences actuelles et 
-                             futures du marché du travail.
+
+                        <p className="text-lg text-gray-700 leading-relaxed">
+                            Notre mission est de fournir des opportunités d'apprentissage accessibles,
+                            pratiques et orientées vers l'emploi. Nous collaborons avec des
+                            entreprises et des experts du secteur pour garantir des formations
+                            alignées aux exigences actuelles du marché.
                         </p>
                     </div>
+
                 </div>
             </div>
         </section>
+
     );
 }
