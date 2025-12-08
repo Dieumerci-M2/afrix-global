@@ -15,10 +15,13 @@ export default function HeroSection() {
     <Carousel className="relative w-full h-[100vh]">
       <CarouselContent>
         <CarouselItem className="relative w-full h-[100vh]">
-          <img src="./../images/hero1.jpg" alt="Hero Image 1" className="w-full h-full object-cover"
+
+          <img src="./../images/hero1.jpg" alt="Hero Image 1" className="absolute inset-0 w-full h-full object-cover z-0"
           />
-          <div className="absolute inset-0 bg-black-500 bg-opacity-20 flex items-center justify-center">
-          <div className="container mx-auto px-4">
+          {/* OVERLAY SOMBRE */}
+          <div className="absolute inset-0 bg-black/60 z-10"></div>
+          <div className="absolute inset-0 z-20 flex items-center justify-center">
+            <div className="container mx-auto px-4">
               <div className="max-w-3xl mx-auto text-center space-y-6">
                 <h1 className="text-white text-3xl md:text-5xl font-bold leading-tight">
                   Bienvenue chez Afrix-Global
@@ -33,13 +36,15 @@ export default function HeroSection() {
                   </Button>
                 </div>
               </div>
-          </div>
+            </div>
           </div>
         </CarouselItem>
         <CarouselItem className="relative w-full h-[100vh]">
-          <img src="./../images/hero2.jpg" alt="Hero Image 2" className="w-full h-full object-cover"
+          <img src="./../images/hero2.jpg" alt="Hero Image 2" className="absolute inset-0 w-full h-full object-cover z-0"
           />
-          <div className="absolute inset-0 bg-blue bg-opacity-50 flex items-center justify-center">
+          {/* OVERLAY SOMBRE */}
+          <div className="absolute inset-0 bg-black/60 z-10"></div>
+          <div className="absolute inset-0 z-20 flex items-center justify-center">
             <div className="container mx-auto px-4">
               <div className="max-w-3xl mx-auto text-center space-y-6">
                 <h1 className="text-white text-3xl md:text-5xl font-bold leading-tight">
@@ -56,19 +61,21 @@ export default function HeroSection() {
                 </div>
               </div>
             </div>
-            </div>
+          </div>
         </CarouselItem>
         <CarouselItem className="relative w-full h-[100vh]">
-          <img src="./../images/hero3.jpg" alt="Hero Image 3" className="w-full h-full object-cover"
+          <img src="./../images/hero3.jpg" alt="Hero Image 3" className="absolute inset-0 w-full h-full object-cover z-0"
           />
-          <div className="absolute inset-0 bg-blue bg-opacity-50 flex items-center justify-center">
+          {/* OVERLAY SOMBRE */}
+          <div className="absolute inset-0 bg-black/60 z-10"></div>
+          <div className="absolute inset-0 z-20 flex items-center justify-center">
             <div className="container mx-auto px-4">
               <div className="max-w-3xl mx-auto text-center space-y-6">
                 <h1 className="text-white text-3xl md:text-5xl font-bold leading-tight">
                   Excellence pédagogique & accompagnement personnalisé
                 </h1>
                 <p className="text-white text-lg md:text-xl max-w-2xl mx-auto">
-                  Bénéficiez d'un suivi individualisé, de projets concrets et d'un réseau 
+                  Bénéficiez d'un suivi individualisé, de projets concrets et d'un réseau
                   professionnel pour maximiser vos chances de réussite.
                 </p>
                 <div className="pt-2">
