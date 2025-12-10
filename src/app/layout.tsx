@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import "remixicon/fonts/remixicon.css";
 
 import "./globals.css";
 import Header from "../components/Header";

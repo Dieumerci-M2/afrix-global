@@ -7,7 +7,7 @@ export default function Footer() {
           {/* LOGO */}
           <div className="flex flex-col items-start">
             <img
-              src="/logo.png"
+              src="/afrix.png"
               alt="Afrix Global"
               className="w-28 mb-4"
             />
