@@ -3,49 +3,46 @@ export default function TestimonialsSection() {
     {
       name: "Samuel Wassa",
       role: "Community Manager",
-      img: "/testimonials/samuel.jpg",
-      quote: "Des solutions sur mesure pour un avenir digital optimisé.",
+      img: null,
+      quote: "Des solutions sur mesure pour un avant d'ajout optimisé.",
     },
     {
       name: "Yvonne Kadima",
-      role: "Directrice Marketing",
-      img: "/testimonials/yvonne.jpg",
-      quote: "Des solutions sur mesure pour un avenir digital optimisé.",
+      role: "Director Marketing", // EXACT comme maquette
+      img: null,
+      quote: "Des solutions sur mesure pour un avant d'ajout optimisé.",
     },
     {
-      name: "Yassim Hassan",
+      name: "Yasdim Hassan", // EXACT comme maquette
       role: "Fullstack Developer",
-      img: "/testimonials/hassan.jpg",
-      quote: "Des solutions sur mesure pour un avenir digital optimisé.",
+      img: null,
+      quote: "Des solutions sur mesure pour un avant d'ajout optimisé.",
     },
   ];
 
   return (
-    <section className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-6 text-center">
-
-        {/* TITRES */}
-        <h4 className="text-blue-600 font-semibold tracking-wide uppercase">
-          Témoignages
-        </h4>
-        <h2 className="text-3xl font-bold mt-2">
+    <section className="py-12 px-4 bg-white">
+      <div className="max-w-6xl mx-auto">
+        {/* Titre EXACT comme maquette */}
+        <h2 className="text-2xl font-bold text-center mb-8">
           Ils expriment leurs satisfactions
         </h2>
 
-        {/* ITEMS */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mt-12">
+        {/* 3 colonnes comme maquette */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {testimonials.map((t, i) => (
             <div key={i} className="text-center">
-              <img
-                src={t.img}
-                alt={t.name}
-                className="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
-              />
+              {/* Placeholder avatar - cercle gris */}
+              <div className="w-20 h-20 bg-gray-300 rounded-full mx-auto mb-4"></div>
 
-              <h3 className="font-bold text-lg">{t.name}</h3>
-              <p className="text-gray-500 text-sm">{t.role}</p>
+              {/* Nom et rôle sur la même ligne comme maquette */}
+              <div className="mb-2">
+                <span className="font-bold">{t.name}</span>
+                <span className="text-gray-600 ml-2">{t.role}</span>
+              </div>
 
-              <p className="mt-3 text-gray-600 italic max-w-xs mx-auto">
+              {/* Citation EXACTE comme maquette */}
+              <p className="text-gray-700 italic">
                 {t.quote}
               </p>
             </div>
