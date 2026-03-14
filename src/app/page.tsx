@@ -6,6 +6,7 @@ import PublicationSection from "../components/PublicationSection";
 import EventsSection from "../components/EventsSection";
 import TestimonialsSection from "../components/TestimonialsSection";
 import PartnersSection from "../components/PartnersSection";
+import PhotoEnsemble from "../components/PhotoEnsemble";
 
 export default function HomePage() {
   return (
@@ -16,6 +17,7 @@ export default function HomePage() {
       <ServiceSection />
       <EventsSection />
       <PublicationSection />
+      <PhotoEnsemble />
       <TestimonialsSection />
       <PartnersSection />
     </main>

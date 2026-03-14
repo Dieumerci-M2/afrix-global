@@ -7,9 +7,9 @@ const partners = [
   "https://cdn.prod.website-files.com/67290660990553e15f9b92b6/6729258180b8be5879a317bc_logoblock.svg",
   "/images/logo_talent4startup.webp",
   "/images/logo_primeTec.webp",
+  "https://skynet-burundi.bi/assets/icones/logo_sous2.svg",
   "/images/logo_harvely.webp",
   "/images/logo_isig.webp",
-  "/images/partner-1.webp",
 ];
 export default function PartnersSection() {
   const carouselRef = useRef<HTMLDivElement>(null);

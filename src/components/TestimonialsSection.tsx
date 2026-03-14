@@ -6,31 +6,31 @@ import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
 
 const testimonials = [
   {
-    photo: "/images/testimonial-1.jpg",
+    photo: "/images/testimonials/testimonial-1.jpg",
     name: "Jean Dupont",
     title: "Developpeur Web",
     text: "Afrix Global m'a permis d'acquerir les competences necessaires pour lancer ma carriere dans le numerique. Le programme est complet et pratique.",
   },
   {
-    photo: "/images/testimonial-2.jpg",
+    photo: "/images/testimonials/testimonial-2.jpg",
     name: "Marie Kamau",
     title: "Designer UI/UX",
     text: "Grace aux formations, j'ai pu developper mes competences en design et trouver un emploi rapidement. Le suivi est excellent !",
   },
   {
-    photo: "/images/testimonial-3.jpg",
+    photo: "/images/testimonials/testimonial-3.jpg",
     name: "Aliou Diouf",
     title: "Entrepreneur Digital",
     text: "Les cours sont concrets et orientes projets reels. Afrix Global a transforme ma vision du numerique et booste ma confiance.",
   },
   {
-    photo: "/images/testimonial-4.jpg",
+    photo: "/images/testimonials/testimonial-4.jpg",
     name: "Fatou Ndiaye",
     title: "Frontend Developer",
     text: "Une experience incroyable qui m'a permis de me lancer en freelance et obtenir mes premiers clients.",
   },
   {
-    photo: "/images/testimonial-5.jpg",
+    photo: "/images/testimonials/testimonial-5.jpg",
     name: "Omar Traore",
     title: "Data Analyst",
     text: "Le programme de formation est tres complet et m'a permis d'acquerir des competences en data science qui sont tres demandees sur le marche.",

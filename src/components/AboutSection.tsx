@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import ImgAbout2 from "@/public/team-engineers-server-hub-working-together-investigate-breach-alerts.jpg";
+import ImgAbout2 from "@/public/images/about/aboutsection .jpg";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import AnimatedCounter from "./AnimatedCounter";
@@ -28,7 +28,7 @@ export default function AboutSection() {
             <Image
               src={ImgAbout2}
               alt="portrait about"
-              className="object-cover scale-x-[-1]"
+              className="object-cover"
             />
           </div>
           <div className=" grid place-content-center w-20 md:w-28  h-20 md:h-28 text-center text-white bg-afrix-green rounded-full absolute -bottom-6 md:-top-12 -right-4 md:-left-10  ">
