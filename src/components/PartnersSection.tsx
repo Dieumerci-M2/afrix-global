@@ -1,30 +1,31 @@
 "use client";
 
-import { useRef } from "react"
-import Image from "next/image"
-import { ChevronLeft, ChevronRight } from "lucide-react"
-  const partners = [
+import { useRef } from "react";
+import Image from "next/image";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+const partners = [
+  "https://cdn.prod.website-files.com/67290660990553e15f9b92b6/6729258180b8be5879a317bc_logoblock.svg",
+  "/images/logo_talent4startup.webp",
+  "/images/logo_primeTec.webp",
+  "/images/logo_harvely.webp",
+  "/images/logo_isig.webp",
   "/images/partner-1.webp",
-  "/images/partner-2.jpg",
-  "/images/partner-3.jpg",
-  "/images/partner-4.jpg",
-  ];
+];
 export default function PartnersSection() {
-
-  const carouselRef = useRef<HTMLDivElement>(null)
+  const carouselRef = useRef<HTMLDivElement>(null);
 
   const scroll = (direction: "left" | "right") => {
     if (carouselRef.current) {
-      const scrollAmount = 200
+      const scrollAmount = 200;
       carouselRef.current.scrollBy({
         left: direction === "left" ? -scrollAmount : scrollAmount,
         behavior: "smooth",
-      })
+      });
     }
-  }
+  };
   return (
     <section
-      className="w-full min-h-[50vh] py-16 bg-[#0a0a0a] flex flex-col items-center gap-10"
+      className="w-full min-h-[50vh] py-16 bg-afrix-dark flex flex-col items-center gap-10"
       style={{
         backgroundImage:
           "radial-gradient(circle at 100% 0%, rgba(15, 157, 88, 0.3), transparent 35%), radial-gradient(circle at 0% 0%, rgba(245, 180, 0, 0.302), transparent 35%)",
