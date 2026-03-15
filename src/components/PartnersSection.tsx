@@ -1,28 +1,27 @@
 "use client";
 
-import { useRef } from "react";
-import Image from "next/image";
-import { ChevronLeft, ChevronRight } from "lucide-react";
-const partners = [
-  "https://cdn.prod.website-files.com/67290660990553e15f9b92b6/6729258180b8be5879a317bc_logoblock.svg",
-  "/images/logo_talent4startup.webp",
-  "/images/logo_primeTec.webp",
-  "https://skynet-burundi.bi/assets/icones/logo_sous2.svg",
-  "/images/logo_harvely.webp",
-  "/images/logo_isig.webp",
-];
+import { useRef } from "react"
+import Image from "next/image"
+import { ChevronLeft, ChevronRight } from "lucide-react"
+  const partners = [
+  "/images/partner-1.webp",
+  "/images/partner-2.jpg",
+  "/images/partner-3.jpg",
+  "/images/partner-4.jpg",
+  ];
 export default function PartnersSection() {
-  const carouselRef = useRef<HTMLDivElement>(null);
+
+  const carouselRef = useRef<HTMLDivElement>(null)
 
   const scroll = (direction: "left" | "right") => {
     if (carouselRef.current) {
-      const scrollAmount = 200;
+      const scrollAmount = 200
       carouselRef.current.scrollBy({
         left: direction === "left" ? -scrollAmount : scrollAmount,
         behavior: "smooth",
-      });
+      })
     }
-  };
+  }
   return (
     <section
       className="w-full min-h-[50vh] py-16 bg-afrix-dark flex flex-col items-center gap-10"
@@ -36,22 +35,13 @@ export default function PartnersSection() {
       </h2>
 
       <div className="relative w-[90%] max-w-[1200px] flex items-center justify-center">
-        {/* Left arrow */}
-        <button
-          onClick={() => scroll("left")}
-          className="absolute left-2 z-10 w-12 h-12 rounded-full bg-white/10 hover:bg-white/25 flex items-center justify-center text-white transition-all"
-          aria-label="Scroll left"
-        >
-          <ChevronLeft size={24} />
-        </button>
-
         {/* Carousel */}
         <div
           ref={carouselRef}
           className="flex gap-8 lg:gap-[5vw] overflow-x-auto scroll-smooth py-4 px-16 scrollbar-hide"
           style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
         >
-          {partners.map((src, i) => (
+          {[...partners, ...partners].map((src, i) => (
             <div
               key={i}
               className="w-[100px] h-[100px] sm:w-[120px] sm:h-[120px] lg:w-[10vw] lg:h-[10vw] flex-shrink-0 rounded-2xl bg-white/5 backdrop-blur-md overflow-hidden flex items-center justify-center hover:scale-105 transition-transform"
@@ -67,14 +57,6 @@ export default function PartnersSection() {
           ))}
         </div>
 
-        {/* Right arrow */}
-        <button
-          onClick={() => scroll("right")}
-          className="absolute right-2 z-10 w-12 h-12 rounded-full bg-white/10 hover:bg-white/25 flex items-center justify-center text-white transition-all"
-          aria-label="Scroll right"
-        >
-          <ChevronRight size={24} />
-        </button>
       </div>
     </section>
   );
