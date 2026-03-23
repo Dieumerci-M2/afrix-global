@@ -26,7 +26,7 @@ export default function HeroSection() {
           transition={{ duration: 0.5 }}
         >
           <motion.h1
-            className="text-4xl  text-center md:text-start sm:text-5xl md:text-6xl lg:text-[6vw] font-black  leading-tight text-white"
+            className="text-4xl  text-center md:text-start sm:text-5xl md:text-6xl lg:text-[6vw] font-black italic  leading-tight text-white"
             style={{ fontFamily: "var(--font-roboto-slab)" }}
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -73,7 +73,7 @@ export default function HeroSection() {
             initial={{ opacity: 1, x: "120%" }}
             animate={{ opacity: 1, x: 0 }}
             transition={{
-              delay: 0.3,
+              delay: 1.2,
               duration: 1.2,
               ease: [0.34, 1.56, 0.64, 1],
             }}
