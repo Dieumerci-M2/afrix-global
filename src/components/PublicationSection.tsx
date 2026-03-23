@@ -1,7 +1,24 @@
+"use client";
+
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
+import { CardContent } from "@/components/ui/card";
 import Link from "next/link";
+import { motion } from "framer-motion";
+
+const container = {
+  hidden: {},
+  show: { transition: { staggerChildren: 0.15 } },
+};
+
+const item = {
+  hidden: { opacity: 0, y: 30 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.5, ease: [0.2, 0.8, 0.2, 1] as const },
+  },
+};
 
 const publications = [
   {
@@ -18,7 +35,6 @@ const publications = [
       "Nous vous proposons 5 formations pratiques, en présentiel et en ligne, pour renforcer vos compétences en numérique et analyse de données, des atouts essentiels et recherchés sur le marché.",
     link: "https://www.linkedin.com/posts/afrix-global_saisissez-cette-opportunit%C3%A9-de-formation-activity-7438079660426567680-MYUm?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAEctRdkBYpYsxcmmUb6I5PI8kudJhWhu-HU",
   },
-
   {
     image: "/images/publications/pub-3.png",
     date: "24 Février 2026",
@@ -27,6 +43,7 @@ const publications = [
     link: "https://x.com/Afrix_Global/status/2026188762280054828?s=20",
   },
 ];
+
 export default function PublicationSection() {
   return (
     <section
@@ -37,14 +54,31 @@ export default function PublicationSection() {
           "radial-gradient(circle at 0% 0%, rgba(66, 133, 244, 0.3), transparent 25%), radial-gradient(circle at 100% 100%, rgba(219, 68, 55, 0.3), transparent 25%)",
       }}
     >
-      <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white text-center mb-10">
-        NOS RECENTES <span className="text-afrix-blue">PUBLICATIONS</span>
-      </h2>
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+      >
+        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white text-center mb-10">
+          NOS RECENTES <span className="text-afrix-blue">PUBLICATIONS</span>
+        </h2>
+      </motion.div>
 
-      <div className="w-[90%] lg:w-[80%] flex flex-wrap justify-center gap-6 mx-auto mt-16">
-        {publications.map((pub) => (
-          <Card
-            key={pub.date}
+      <motion.div
+        className="w-[90%] lg:w-[80%] flex flex-wrap justify-center gap-6"
+        variants={container}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, margin: "-50px" }}
+      >
+        {publications.map((pub, i) => (
+          <motion.div
+            key={i}
+            variants={item}
+            whileHover={{
+              y: -6,
+              transition: { type: "spring", stiffness: 300, damping: 20 },
+            }}
             className="w-full sm:w-[48%] lg:w-[30%] glass-light rounded-2xl overflow-hidden border-0 transition-transform hover:-translate-y-1 hover:shadow-2xl bg-white/5"
           >
             <div className="relative aspect-video w-full">
@@ -52,7 +86,7 @@ export default function PublicationSection() {
                 src={pub.image || "/placeholder.svg"}
                 alt={pub.description}
                 fill
-                className="absolute  inset-0 w-full h-full z-20 object-cover"
+                className="absolute inset-0 w-full h-full z-20 object-cover"
               />
             </div>
             <CardContent className="p-5 flex flex-col gap-3">
@@ -63,15 +97,15 @@ export default function PublicationSection() {
               <Link href={pub.link}>
                 <Button
                   variant="default"
-                  className="self-start  bg-afrix-blue text-white hover:bg-afrix-blue/70 transition-all text-sm px-5"
+                  className="self-start bg-afrix-blue text-white hover:bg-afrix-blue/70 transition-all text-sm px-5"
                 >
                   Lire plus
                 </Button>
               </Link>
             </CardContent>
-          </Card>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
     </section>
   );
 }

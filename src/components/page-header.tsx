@@ -1,3 +1,6 @@
+"use client";
+import { motion } from "framer-motion";
+
 interface PageHeaderProps {
   title: string;
   highlight: string;
@@ -19,7 +22,12 @@ export function PageHeader({
           "radial-gradient(circle at 0% 100%, rgba(66, 133, 244, 0.3), transparent 25%), radial-gradient(circle at 100% 100%, rgba(219, 68, 55, 0.3), transparent 35%)",
       }}
     >
-      <div className="w-[80%] mx-auto mt-16 flex flex-col items-center text-center gap-4">
+      <motion.div
+        className="w-[80%] mx-auto mt-16 flex flex-col items-center text-center gap-4"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+      >
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white text-balance">
           {title} <span className={highlightColor}>{highlight}</span>
         </h1>
@@ -28,7 +36,7 @@ export function PageHeader({
             {description}
           </p>
         )}
-      </div>
+      </motion.div>
     </section>
   );
 }

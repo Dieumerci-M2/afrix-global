@@ -7,7 +7,22 @@ import {
   ImageIcon,
   PenTool,
 } from "lucide-react";
-import { Card, CardContent } from "@/components/ui/card";
+import { CardContent } from "@/components/ui/card";
+import { motion } from "framer-motion";
+
+const container = {
+  hidden: {},
+  show: { transition: { staggerChildren: 0.15 } },
+};
+
+const item = {
+  hidden: { opacity: 0, y: 30 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.5, ease: [0.2, 0.8, 0.2, 1] as const },
+  },
+};
 
 const services = [
   {
@@ -64,14 +79,31 @@ export default function ServicesSection() {
           "radial-gradient(circle at 10% 0%, rgba(244, 180, 0, 0.3), transparent 25%), radial-gradient(circle at 100% 100%, rgba(15, 157, 88, 0.3), transparent 35%)",
       }}
     >
-      <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white text-center">
-        NOS <span className="text-afrix-red">SERVICES</span>
-      </h2>
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+      >
+        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white text-center">
+          NOS <span className="text-afrix-red">SERVICES</span>
+        </h2>
+      </motion.div>
 
-      <div className="w-[90%] lg:w-[80%] flex flex-wrap justify-center gap-6 mx-auto mt-16">
-        {services.map((service) => (
-          <Card
-            key={service.title}
+      <motion.div
+        className="w-[90%] lg:w-[80%] flex flex-wrap justify-center gap-6"
+        variants={container}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, margin: "-50px" }}
+      >
+        {services.map((service, i) => (
+          <motion.div
+            key={i}
+            variants={item}
+            whileHover={{
+              y: -10,
+              transition: { type: "spring", stiffness: 300, damping: 20 },
+            }}
             className="w-full sm:w-[45%] lg:w-[30%] glass rounded-2xl border border-white/20 text-center transition-transform hover:-translate-y-1 hover:shadow-2xl bg-black/30"
           >
             <CardContent className="p-8 flex flex-col items-center gap-4">
@@ -83,9 +115,9 @@ export default function ServicesSection() {
                 {service.description}
               </p>
             </CardContent>
-          </Card>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
     </section>
   );
 }

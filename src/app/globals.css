@@ -160,3 +160,7 @@
 .animate-partners-scroll {
   animation: partners-scroll 25s linear infinite;
 }
+
+.roboto-slab {
+  font-family: var(--font-roboto-slab);
+}

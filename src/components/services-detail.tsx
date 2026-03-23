@@ -1,3 +1,4 @@
+"use client";
 import {
   Code,
   Smartphone,
@@ -7,10 +8,24 @@ import {
   PenTool,
   ArrowRight,
 } from "lucide-react";
-import { Card, CardContent } from "@/components/ui/card";
+import { CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
+const container = {
+  hidden: {},
+  show: { transition: { staggerChildren: 0.15 } },
+};
+
+const item = {
+  hidden: { opacity: 0, y: 30 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.5, ease: [0.2, 0.8, 0.2, 1] as const },
+  },
+};
 const services = [
   {
     icon: Code,
@@ -114,10 +129,21 @@ export function ServicesDetail() {
       }}
     >
       {/* Services Grid */}
-      <div className="w-full max-w-300 flex flex-wrap justify-center gap-8">
-        {services.map((service) => (
-          <Card
-            key={service.title}
+      <motion.div
+        className="w-full max-w-300 flex flex-wrap justify-center gap-8"
+        variants={container}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, margin: "-50px" }}
+      >
+        {services.map((service, i) => (
+          <motion.div
+            key={i}
+            variants={item}
+            whileHover={{
+              y: -10,
+              transition: { type: "spring", stiffness: 300, damping: 20 },
+            }}
             className={`w-full sm:w-[45%] lg:w-[30%] rounded-2xl border ${service.borderColor} bg-black/30 backdrop-blur-md transition-all hover:-translate-y-2 hover:shadow-2xl group`}
           >
             <CardContent className="p-8 flex flex-col gap-5">
@@ -144,9 +170,9 @@ export function ServicesDetail() {
                 ))}
               </ul>
             </CardContent>
-          </Card>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
 
       {/* CTA */}
       <div className="flex flex-col items-center gap-4 mt-8">

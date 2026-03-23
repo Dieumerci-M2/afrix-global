@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import Logo from "@/public/afrix_logo_blanc.png";
 import { Mail, Phone, MapPin } from "lucide-react";
 
 const menuLinks = [
@@ -26,7 +27,7 @@ export default function Footer() {
         {/* Block 1: Logo + desc + socials */}
         <div className="flex md:block flex-col items-center justify-center">
           <Image
-            src={"/logoAfrix.png"}
+            src={Logo}
             alt="Afrix Global Logo"
             width={150}
             height={40}

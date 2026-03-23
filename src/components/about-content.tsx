@@ -1,9 +1,28 @@
+"use client";
+
 import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
 import { Rocket, Globe, Target, Users, Award, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import AboutImg from "@/public/images/about/about_section.jpg";
+import AboutImg2 from "@/public/images/about/about_section2.jpg";
 import Link from "next/link";
 import AnimatedCounter from "@/components/AnimatedCounter";
+import { motion } from "framer-motion";
+
+const container = {
+  hidden: {},
+  show: { transition: { staggerChildren: 0.15 } },
+};
+
+const item = {
+  hidden: { opacity: 0, y: 30 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.5, ease: [0.2, 0.8, 0.2, 1] as const },
+  },
+};
 
 const values = [
   {
@@ -122,8 +141,6 @@ const teamMembers = [
   },
 ];
 
-
-
 export function AboutContent() {
   return (
     <div className="w-full bg-afrix-dark">
@@ -140,7 +157,7 @@ export function AboutContent() {
           <div className="w-full lg:w-1/2 relative min-h-100 lg:min-h-125">
             <div className="absolute left-0 top-0 w-[70%] h-[80%] rounded-2xl overflow-hidden">
               <Image
-                src="/images/about-1.jpg"
+                src={AboutImg2}
                 alt="Formation Afrix Global"
                 fill
                 className="object-cover"
@@ -148,7 +165,7 @@ export function AboutContent() {
             </div>
             <div className="absolute right-0 bottom-0 w-[60%] h-[50%] rounded-2xl overflow-hidden border-4 border-afrix-dark">
               <Image
-                src="/images/about-2.jpg"
+                src={AboutImg}
                 alt="Equipe Afrix Global"
                 fill
                 className="object-cover"
@@ -158,30 +175,56 @@ export function AboutContent() {
               <h3 className="text-3xl font-bold text-white">
                 <AnimatedCounter prefix="+" target={5} />
               </h3>
-              <p className="text-white text-sm">Annees</p>
+              <p className="text-white text-sm">Années</p>
             </div>
           </div>
 
           {/* Content */}
-          <div className="w-full lg:w-1/2 flex flex-col gap-6">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white">
-              Notre <span className="text-afrix-blue">Histoire</span>
-            </h2>
-            <p className="text-white/80 text-base leading-relaxed">
+          <motion.div
+            className="w-full lg:w-1/2 flex flex-col gap-6"
+            variants={container}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, margin: "-50px" }}
+          >
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+            >
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white">
+                Notre <span className="text-afrix-blue">Histoire</span>
+              </h2>
+            </motion.div>
+            <motion.p
+              className="text-white/80 text-base leading-relaxed"
+              variants={item}
+              whileHover={{
+                y: -10,
+                transition: { type: "spring", stiffness: 300, damping: 20 },
+              }}
+            >
               Afrix Global est ne d'une vision simple mais ambitieuse : rendre
               l'education numerique accessible a tous en Afrique. Fonde par une
               equipe de passionnes de technologie et d'education, nous avons
               commence notre aventure avec la conviction que la technologie peut
               etre un puissant levier de changement social.
-            </p>
-            <p className="text-white/80 text-base leading-relaxed">
+            </motion.p>
+            <motion.p
+              className="text-white/80 text-base leading-relaxed"
+              variants={item}
+              whileHover={{
+                y: -10,
+                transition: { type: "spring", stiffness: 300, damping: 20 },
+              }}
+            >
               Depuis notre creation, nous avons forme des centaines de jeunes
               talents, les preparant aux defis du marche du travail moderne.
               Notre approche pratique et notre engagement envers l'excellence
               nous ont permis de devenir un acteur reconnu dans le domaine de la
               formation numerique.
-            </p>
-          </div>
+            </motion.p>
+          </motion.div>
         </div>
       </section>
 
@@ -194,14 +237,33 @@ export function AboutContent() {
         }}
       >
         <div className="w-[90%] lg:w-[80%] mx-auto mt-16">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white text-center mb-12">
-            Notre <span className="text-afrix-yellow">Mission</span> &{" "}
-            <span className="text-afrix-red">Vision</span>
-          </h2>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white text-center mb-12">
+              Notre <span className="text-afrix-yellow">Mission</span> &{" "}
+              <span className="text-afrix-red">Vision</span>
+            </h2>
+          </motion.div>
 
-          <div className="grid md:grid-cols-2 gap-8 mx-auto mt-16">
+          <motion.div
+            className="grid md:grid-cols-2 gap-8 mx-auto mt-16"
+            variants={container}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, margin: "-50px" }}
+          >
             {/* Mission */}
-            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 flex flex-col gap-4">
+            <motion.div
+              className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 flex flex-col gap-4"
+              variants={item}
+              whileHover={{
+                y: -10,
+                transition: { type: "spring", stiffness: 300, damping: 20 },
+              }}
+            >
               <div className="w-16 h-16 rounded-full bg-afrix-yellow/20 flex items-center justify-center">
                 <Rocket className="w-8 h-8 text-afrix-yellow" />
               </div>
@@ -215,10 +277,17 @@ export function AboutContent() {
                 l'entrepreneuriat et repondre aux besoins reels du marche du
                 travail.
               </p>
-            </div>
+            </motion.div>
 
             {/* Vision */}
-            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 flex flex-col gap-4">
+            <motion.div
+              className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 flex flex-col gap-4"
+              variants={item}
+              whileHover={{
+                y: -10,
+                transition: { type: "spring", stiffness: 300, damping: 20 },
+              }}
+            >
               <div className="w-16 h-16 rounded-full bg-afrix-red/20 flex items-center justify-center">
                 <Globe className="w-8 h-8 text-afrix-red" />
               </div>
@@ -230,26 +299,43 @@ export function AboutContent() {
                 Nous aspirons a etre le pont entre le potentiel inexploite de
                 l'Afrique et les opportunites de l'economie numerique mondiale.
               </p>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         </div>
       </section>
 
       {/* Nos Valeurs */}
       <section className="w-full py-20">
         <div className="w-[90%] lg:w-[80%] mx-auto">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white text-center mb-4">
-            Nos <span className="text-afrix-green">Valeurs</span>
-          </h2>
-          <p className="text-white/70 text-center max-w-[600px] mx-auto mb-12">
-            Les principes qui guident notre action au quotidien et definissent
-            notre culture d'entreprise.
-          </p>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white text-center mb-4">
+              Nos <span className="text-afrix-green">Valeurs</span>
+            </h2>
+            <p className="text-white/70 text-center max-w-[600px] mx-auto mb-12">
+              Les principes qui guident notre action au quotidien et definissent
+              notre culture d'entreprise.
+            </p>
+          </motion.div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mx-auto mt-16">
-            {values.map((value) => (
-              <div
-                key={value.title}
+          <motion.div
+            className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mx-auto mt-16"
+            variants={container}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, margin: "-50px" }}
+          >
+            {values.map((value, i) => (
+              <motion.div
+                key={i}
+                variants={item}
+                whileHover={{
+                  y: -10,
+                  transition: { type: "spring", stiffness: 300, damping: 20 },
+                }}
                 className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 flex flex-col items-center text-center gap-4 hover:border-white/20 transition-colors"
               >
                 <div
@@ -261,9 +347,9 @@ export function AboutContent() {
                 <p className="text-white/70 text-sm leading-relaxed">
                   {value.description}
                 </p>
-              </div>
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
         </div>
       </section>
 
@@ -283,14 +369,15 @@ export function AboutContent() {
                 className="flex flex-col items-center gap-2 p-6"
               >
                 <h3
-                  className={`text-4xl sm:text-5xl font-bold ${index === 0
+                  className={`text-4xl sm:text-5xl font-bold ${
+                    index === 0
                       ? "text-afrix-blue"
                       : index === 1
                         ? "text-afrix-green"
                         : index === 2
                           ? "text-afrix-yellow"
                           : "text-afrix-red"
-                    }`}
+                  }`}
                 >
                   <AnimatedCounter prefix="+" target={stat.value} />
                 </h3>
@@ -310,16 +397,36 @@ export function AboutContent() {
             "radial-gradient(circle at 0% 100%, rgba(15, 157, 88, 0.3), transparent 35%), radial-gradient(circle at 100% 0%, rgba(244, 180, 0, 0.3), transparent 35%)",
         }}
       >
-        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white text-center mb-4">
-            Notre Equipe<span className="text-afrix-green"> - Afrix Global</span>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+        >
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white text-center mb-4">
+            Notre Equipe
+            <span className="text-afrix-green"> - Afrix Global</span>
           </h2>
           <p className="text-white/70 text-center max-w-[600px] mx-auto mb-12">
-            Decouvrez l'equipe passionnee d'Afrix Global qui forme et accompagne les talents africains dans le numerique.
+            Decouvrez l'equipe passionnee d'Afrix Global qui forme et accompagne
+            les talents africains dans le numerique.
           </p>
-        <div className="w-[90%] max-w-[1200px] mx-auto mt-16 flex flex-wrap justify-center gap-8">
-          {teamMembers.map((member) => (
-            <Card
-              key={member.name}
+        </motion.div>
+
+        <motion.div
+          className="w-[90%] max-w-[1200px] mx-auto mt-16 flex flex-wrap justify-center gap-8"
+          variants={container}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, margin: "-50px" }}
+        >
+          {teamMembers.map((member, i) => (
+            <motion.div
+              key={i}
+              variants={item}
+              whileHover={{
+                y: -10,
+                transition: { type: "spring", stiffness: 300, damping: 20 },
+              }}
               className="w-full sm:w-[45%] lg:w-[30%] glass rounded-2xl border border-white/10 bg-black/30 transition-transform hover:-translate-y-2 hover:shadow-2xl group"
             >
               <CardContent className="p-6 flex flex-col items-center text-center gap-4">
@@ -369,13 +476,18 @@ export function AboutContent() {
                   </a>
                 </div>
               </CardContent>
-            </Card>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </section>
 
       {/* CTA */}
-      <section className="w-full py-20">
+      <motion.section
+        className="w-full py-20"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+      >
         <div className="w-[90%] lg:w-[80%] mx-auto bg-gradient-to-r from-afrix-blue/20 to-afrix-green/20 border border-white/10 rounded-3xl p-8 sm:p-12 flex flex-col items-center text-center gap-6">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white">
             Pret a rejoindre l'aventure ?
@@ -400,7 +512,7 @@ export function AboutContent() {
             </Button>
           </div>
         </div>
-      </section>
+      </motion.section>
     </div>
   );
 }

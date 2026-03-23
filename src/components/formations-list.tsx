@@ -1,13 +1,29 @@
 "use client";
+"use client";
 
 import Image from "next/image";
-import { Card, CardContent } from "@/components/ui/card";
+import { CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Clock, Users, Star } from "lucide-react";
 import { useState } from "react";
 import FormInscription from "./FormInscription";
 import Modal from "./Modal";
+import { motion } from "framer-motion";
+
+const container = {
+  hidden: {},
+  show: { transition: { staggerChildren: 0.15 } },
+};
+
+const item = {
+  hidden: { opacity: 0, y: 30 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.5, ease: [0.2, 0.8, 0.2, 1] as const },
+  },
+};
 
 const formations = [
   {
@@ -138,10 +154,21 @@ export function FormationsList() {
             "radial-gradient(circle at 0% 0%, rgba(244, 180, 0, 0.3), transparent 25%), radial-gradient(circle at 100% 100%, rgba(66, 133, 244, 0.3), transparent 35%)",
         }}
       >
-        <div className="w-[90%] max-w-300 flex flex-wrap justify-center gap-8">
-          {formations.map((formation) => (
-            <Card
-              key={formation.title}
+        <motion.div
+          className="w-[90%] max-w-300 flex flex-wrap justify-center gap-8"
+          variants={container}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, margin: "-50px" }}
+        >
+          {formations.map((formation, i) => (
+            <motion.div
+              key={i}
+              variants={item}
+              whileHover={{
+                y: -10,
+                transition: { type: "spring", stiffness: 300, damping: 20 },
+              }}
               className="w-full sm:w-[45%] lg:w-[30%] rounded-2xl border border-white/10 bg-black/30 backdrop-blur-md overflow-hidden transition-all hover:-translate-y-2 hover:shadow-2xl group"
             >
               {/* Image */}
@@ -203,9 +230,9 @@ export function FormationsList() {
                   S'inscrire
                 </Button>
               </CardContent>
-            </Card>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </section>
 
       {/* 🔥 MODAL */}

@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const partners = [
   "https://cdn.prod.website-files.com/67290660990553e15f9b92b6/6729258180b8be5879a317bc_logoblock.svg",
@@ -20,9 +21,15 @@ export default function PartnersSection() {
           "radial-gradient(circle at 100% 0%, rgba(15, 157, 88, 0.3), transparent 35%), radial-gradient(circle at 0% 0%, rgba(245, 180, 0, 0.302), transparent 35%)",
       }}
     >
-      <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white text-center">
-        NOS <span className="text-[#4285f4]">PARTENAIRES</span>
-      </h2>
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+      >
+        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white text-center">
+          NOS <span className="text-[#4285f4]">PARTENAIRES</span>
+        </h2>
+      </motion.div>
 
       <div className="relative mx-auto mt-16 mb-16 w-full overflow-hidden">
         {/* Fade gauche */}

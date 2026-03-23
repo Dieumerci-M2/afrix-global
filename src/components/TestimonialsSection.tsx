@@ -2,8 +2,9 @@
 
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import { IoMdQuote } from "react-icons/io";
+import { motion } from "framer-motion";
 
 const testimonials = [
   {
@@ -79,9 +80,15 @@ export default function TestimonialsSection() {
           "radial-gradient(circle at 0% 100%, rgba(245, 180, 0, 0.302), transparent 35%), radial-gradient(circle at 100% 100%, rgba(15, 157, 88, 0.3), transparent 35%), radial-gradient(circle at 100% 0%, rgba(219, 68, 55, 0.3), transparent 25%)",
       }}
     >
-      <h2 className="text-3xl lg:text-4xl font-bold text-afrix-yellow text-center mb-10">
-        TESTIMONIALES
-      </h2>
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+      >
+        <h2 className="text-3xl lg:text-4xl font-bold text-afrix-yellow text-center mb-10">
+          TESTIMONIALES
+        </h2>
+      </motion.div>
 
       <div className="w-[90%] lg:w-[80%] flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
         {/* MOBILE AVATARS */}

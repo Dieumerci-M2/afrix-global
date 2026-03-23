@@ -15,9 +15,9 @@ export default function FormInscription() {
   };
 
   return (
-    <div className="w-full lg:w-3/5 mx-auto">
+    <div className="w-full lg:w-3/5 mx-auto ">
       <Card className="rounded-2xl border border-white/10 bg-black/30 backdrop-blur-md">
-        <CardContent className="p-8">
+        <CardContent className="p-8 px-16">
           {submitted ? (
             <div className="flex flex-col items-center justify-center gap-4 py-12">
               <h3 className="text-xl font-bold text-white">
@@ -46,18 +46,18 @@ export default function FormInscription() {
                 <div className="flex-1 flex flex-col gap-2">
                   <Label className="text-white/80 text-sm">Prenom</Label>
                   <Input
-                    defaultValue="Prenom"
+                    placeholder="Prenom"
                     required
-                    className="h-12 bg-black border border-white/20 text-white  rounded-md"
+                    className="h-12 bg-black border border-white/20 text-white  placeholder:text-gray-500/50  rounded-md"
                   />
                 </div>
 
                 <div className="flex-1 flex flex-col gap-2">
                   <Label className="text-white/80 text-sm">Post-nom</Label>
                   <Input
-                    defaultValue="Post-nom"
+                    placeholder="Post-nom"
                     required
-                    className="h-12 bg-black border border-white/20 text-white rounded-md"
+                    className="h-12 bg-black border border-white/20 text-white  placeholder:text-gray-500/50  rounded-md"
                   />
                 </div>
               </div>
@@ -113,9 +113,9 @@ export default function FormInscription() {
                   <Label className="text-white/80 text-sm">Téléphone</Label>
                   <Input
                     type="tel"
-                    defaultValue="+243..."
+                    placeholder="+243..."
                     required
-                    className="h-12 bg-black border border-white/20 text-white rounded-md"
+                    className="h-12 bg-black border border-white/20 text-white placeholder:text-gray-500/50 rounded-md"
                   />
                 </div>
 
@@ -123,9 +123,9 @@ export default function FormInscription() {
                   <Label className="text-white/80 text-sm">Email</Label>
                   <Input
                     type="email"
-                    defaultValue="email@gmail.com"
+                    placeholder="email@gmail.com"
                     required
-                    className="h-12 bg-black border border-white/20 text-white rounded-md"
+                    className="h-12 bg-black border border-white/20 text-white  placeholder:text-gray-500/50  rounded-md"
                   />
                 </div>
               </div>
@@ -135,17 +135,17 @@ export default function FormInscription() {
                 <div className="flex-1 flex flex-col gap-2">
                   <Label className="text-white/80 text-sm">Ville</Label>
                   <Input
-                    defaultValue="Ville"
+                    placeholder="Ville"
                     required
-                    className="h-12 bg-black border border-white/20 text-white rounded-md"
+                    className="h-12 bg-black border border-white/20 text-white  placeholder:text-gray-500/50  rounded-md"
                   />
                 </div>
                 <div className="flex-1 flex flex-col gap-2">
                   <Label className="text-white/80 text-sm">Pays</Label>
                   <Input
-                    defaultValue="Pays"
+                    placeholder="Pays"
                     required
-                    className="h-12 bg-black border border-white/20 text-white rounded-md"
+                    className="h-12 bg-black border border-white/20 text-white  placeholder:text-gray-500/50  rounded-md"
                   />
                 </div>
               </div>
@@ -165,7 +165,7 @@ export default function FormInscription() {
                       required
                       className="hidden peer"
                     />
-                    <div className="w-5 h-5 bg-black border-1 border-white flex items-center justify-center peer-checked:bg-afrix-blue transition-colors duration-200">
+                    <div className="w-5 h-5 bg-black border border-white flex items-center justify-center peer-checked:bg-afrix-blue transition-colors duration-200">
                       <div className="w-2 h-2 bg-white hidden peer-checked:block rounded-sm"></div>
                     </div>
                     <span className="text-white text-sm">Oui</span>
@@ -188,7 +188,7 @@ export default function FormInscription() {
               </div>
 
               {/* Modalité */}
-              <div>
+              <div className=" my-6 ">
                 <Label className="text-white/80 text-sm">
                   Préférez-vous suivre la formation :
                 </Label>
