@@ -19,12 +19,16 @@ export default function FormInscription() {
       <Card className="rounded-2xl border border-white/10 bg-black/30 backdrop-blur-md">
         <CardContent className="p-8 px-16">
           {submitted ? (
-            <div className="flex flex-col items-center justify-center gap-4 py-12">
+            <div
+              className="flex flex-col items-center justify-center gap-4 py-12"
+              role="status"
+              aria-live="polite"
+            >
               <h3 className="text-xl font-bold text-white">
                 Inscription réussie !
               </h3>
               <p className="text-white/70 text-center">
-                Merci de vous être inscrit.
+                Merci de vous &ecirc;tre inscrit.
               </p>
             </div>
           ) : (
@@ -32,7 +36,7 @@ export default function FormInscription() {
               {/* Titre */}
               <div className="mb-4">
                 <h2 className="text-4xl font-bold text-white">
-                  Formulaire d'inscription
+                  Formulaire d&apos;inscription
                 </h2>
                 <p className="text-white/70 text-sm mt-2">
                   Rejoignez nos formations pour développer vos compétences
@@ -44,36 +48,51 @@ export default function FormInscription() {
               {/* Post-nom + Prénom */}
               <div className="flex flex-col sm:flex-row gap-4">
                 <div className="flex-1 flex flex-col gap-2">
-                  <Label className="text-white/80 text-sm">Prenom</Label>
+                  <Label htmlFor="prenom" className="text-white/80 text-sm">
+                    Prénom
+                  </Label>
                   <Input
-                    placeholder="Prenom"
+                    id="prenom"
+                    name="prenom"
+                    placeholder="Prénom"
                     required
-                    className="h-12 bg-black border border-white/20 text-white  placeholder:text-gray-500/50  rounded-md"
+                    aria-required="true"
+                    className="h-12 bg-black border border-white/20 text-white placeholder:text-gray-500/50 rounded-md"
                   />
                 </div>
 
                 <div className="flex-1 flex flex-col gap-2">
-                  <Label className="text-white/80 text-sm">Post-nom</Label>
+                  <Label htmlFor="postnom" className="text-white/80 text-sm">
+                    Post-nom
+                  </Label>
                   <Input
+                    id="postnom"
+                    name="postnom"
                     placeholder="Post-nom"
                     required
-                    className="h-12 bg-black border border-white/20 text-white  placeholder:text-gray-500/50  rounded-md"
+                    aria-required="true"
+                    className="h-12 bg-black border border-white/20 text-white placeholder:text-gray-500/50 rounded-md"
                   />
                 </div>
               </div>
 
               {/* Formation */}
               <div className="relative">
+                <Label htmlFor="formation" className="text-white/80 text-sm">
+                  Formation souhaitée
+                </Label>
                 <select
                   id="formation"
+                  name="formation"
                   required
+                  aria-required="true"
                   className="w-full bg-black border border-white/20 text-white p-3 pr-10 rounded-md focus:outline-none focus:ring-2 focus:ring-afrix-blue appearance-none"
                 >
                   <option value="" className="text-black">
                     Choisissez une formation
                   </option>
                   <option value="formation1" className="text-white">
-                    Initiation à l'informatique
+                    Initiation à l&apos;informatique
                   </option>
                   <option value="formation2" className="text-white">
                     Kobo Collect et analyse des données
@@ -110,22 +129,32 @@ export default function FormInscription() {
               {/* Téléphone + Email */}
               <div className="flex flex-col sm:flex-row gap-4">
                 <div className="flex-1 flex flex-col gap-2">
-                  <Label className="text-white/80 text-sm">Téléphone</Label>
+                  <Label htmlFor="telephone" className="text-white/80 text-sm">
+                    Téléphone
+                  </Label>
                   <Input
+                    id="telephone"
+                    name="telephone"
                     type="tel"
                     placeholder="+243..."
                     required
+                    aria-required="true"
                     className="h-12 bg-black border border-white/20 text-white placeholder:text-gray-500/50 rounded-md"
                   />
                 </div>
 
                 <div className="flex-1 flex flex-col gap-2">
-                  <Label className="text-white/80 text-sm">Email</Label>
+                  <Label htmlFor="email" className="text-white/80 text-sm">
+                    Email
+                  </Label>
                   <Input
+                    id="email"
+                    name="email"
                     type="email"
                     placeholder="email@gmail.com"
                     required
-                    className="h-12 bg-black border border-white/20 text-white  placeholder:text-gray-500/50  rounded-md"
+                    aria-required="true"
+                    className="h-12 bg-black border border-white/20 text-white placeholder:text-gray-500/50 rounded-md"
                   />
                 </div>
               </div>
@@ -133,19 +162,29 @@ export default function FormInscription() {
               {/* Ville + Pays */}
               <div className="flex flex-col sm:flex-row gap-4">
                 <div className="flex-1 flex flex-col gap-2">
-                  <Label className="text-white/80 text-sm">Ville</Label>
+                  <Label htmlFor="ville" className="text-white/80 text-sm">
+                    Ville
+                  </Label>
                   <Input
+                    id="ville"
+                    name="ville"
                     placeholder="Ville"
                     required
-                    className="h-12 bg-black border border-white/20 text-white  placeholder:text-gray-500/50  rounded-md"
+                    aria-required="true"
+                    className="h-12 bg-black border border-white/20 text-white placeholder:text-gray-500/50 rounded-md"
                   />
                 </div>
                 <div className="flex-1 flex flex-col gap-2">
-                  <Label className="text-white/80 text-sm">Pays</Label>
+                  <Label htmlFor="pays" className="text-white/80 text-sm">
+                    Pays
+                  </Label>
                   <Input
+                    id="pays"
+                    name="pays"
                     placeholder="Pays"
                     required
-                    className="h-12 bg-black border border-white/20 text-white  placeholder:text-gray-500/50  rounded-md"
+                    aria-required="true"
+                    className="h-12 bg-black border border-white/20 text-white placeholder:text-gray-500/50 rounded-md"
                   />
                 </div>
               </div>
@@ -239,7 +278,7 @@ export default function FormInscription() {
               </div>
 
               <Button className="w-full md:w-full p-6 bg-afrix-blue hover:bg-afrix-blue/80 cursor-pointer">
-                S'inscrire
+                S&apos;inscrire
               </Button>
             </form>
           )}

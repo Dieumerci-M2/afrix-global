@@ -66,7 +66,13 @@ export default function HeroSection() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
           >
-            <Image src={LogoAfrix} alt="logo afrix" />
+            <Image
+              src={LogoAfrix}
+              alt="Logo Afrix Global"
+              width={200}
+              height={200}
+              priority
+            />
           </motion.div>
           <motion.div
             className="absolute  md:top-12 w-full md:w-auto h-auto  z-2 md:z-0"
@@ -78,7 +84,11 @@ export default function HeroSection() {
               ease: [0.34, 1.56, 0.64, 1],
             }}
           >
-            <Image src={image} alt="Image hero section" />
+            <Image
+              src={image}
+              alt="Illustration d’une équipe innovante travaillant sur la transformation digitale"
+              priority
+            />
           </motion.div>
         </div>
       </div>

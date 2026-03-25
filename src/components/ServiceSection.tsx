@@ -107,8 +107,7 @@ export default function ServicesSection() {
             className="w-full sm:w-[45%] lg:w-[30%] glass rounded-2xl border border-white/20 text-center transition-transform hover:-translate-y-1 hover:shadow-2xl bg-black/30"
           >
             <CardContent className="p-8 flex flex-col items-center gap-4">
-              <service.icon
-                className={`w-12 h-12 lg:w-16 lg:h-16 ${service.color}`}
+              <service.icon                aria-hidden="true"                className={`w-12 h-12 lg:w-16 lg:h-16 ${service.color}`}
               />
               <h3 className="text-lg font-bold text-white">{service.title}</h3>
               <p className="text-white/70 text-sm leading-relaxed">

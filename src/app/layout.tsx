@@ -20,9 +20,40 @@ const robotoSlab = Roboto_Slab({
 });
 
 export const metadata: Metadata = {
-  title: "Afrix Global",
+  title: "Afrix Global - EdTech et Formation Digitale en Afrique",
   description:
-    "Afrix Global est une entreprise EdTech innovante qui révolutionne l’éducation en Afrique grâce à la technologie et au numérique. Nous avons pour mission de rendre l’apprentissage accessible à tous, en proposant des solutions éducatives adaptées aux besoins des jeunes, des professionnels et des entrepreneurs.",
+    "Afrix Global propose des formations numériques, des services tech et de l’accompagnement startup pour l’Afrique. Rejoignez notre écosystème d’innovation digitale.",
+  keywords: [
+    "Afrix Global",
+    "formations numérique",
+    "EdTech Afrique",
+    "développement web",
+    "marketing digital",
+    "inclusion numérique",
+  ],
+  authors: [{ name: "Afrix Global", url: "https://afrix-global.com" }],
+  metadataBase: new URL("https://afrix-global.com"),
+  openGraph: {
+    title: "Afrix Global - Éducation et innovation digitale en Afrique",
+    description:
+      "Afrix Global accélère les compétences digitales en Afrique via des formations, du mentoring et des services tech.",
+    type: "website",
+    locale: "fr_FR",
+    siteName: "Afrix Global",
+    images: [
+      {
+        url: "https://afrix-global.com/images/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Afrix Global EdTech",
+      },
+    ],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
   icons: {
     icon: "/favicon.png",
   },
@@ -34,8 +65,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="fr">
       <body
+      suppressHydrationWarning
         className={`${geistSans.variable} ${geistMono.variable} ${robotoSlab.variable} antialiased`}
       >
         <Header />

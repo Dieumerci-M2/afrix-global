@@ -1,6 +1,7 @@
 "use client";
 "use client";
 
+/* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
 import { CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";

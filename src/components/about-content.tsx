@@ -1,5 +1,6 @@
 "use client";
 
+/* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
 import { Rocket, Globe, Target, Users, Award, Heart } from "lucide-react";
@@ -143,7 +144,7 @@ const teamMembers = [
 
 export function AboutContent() {
   return (
-    <div className="w-full bg-afrix-dark">
+    <div role="main" className="w-full bg-afrix-dark">
       {/* Notre Histoire */}
       <section
         className="w-full py-20"
@@ -204,9 +205,9 @@ export function AboutContent() {
                 transition: { type: "spring", stiffness: 300, damping: 20 },
               }}
             >
-              Afrix Global est ne d'une vision simple mais ambitieuse : rendre
-              l'education numerique accessible a tous en Afrique. Fonde par une
-              equipe de passionnes de technologie et d'education, nous avons
+              Afrix Global est ne d&apos;une vision simple mais ambitieuse : rendre
+              l&apos;education numerique accessible a tous en Afrique. Fonde par une
+              equipe de passionnes de technologie et d&apos;education, nous avons
               commence notre aventure avec la conviction que la technologie peut
               etre un puissant levier de changement social.
             </motion.p>
@@ -220,7 +221,7 @@ export function AboutContent() {
             >
               Depuis notre creation, nous avons forme des centaines de jeunes
               talents, les preparant aux defis du marche du travail moderne.
-              Notre approche pratique et notre engagement envers l'excellence
+              Notre approche pratique et notre engagement envers l&apos;excellence
               nous ont permis de devenir un acteur reconnu dans le domaine de la
               formation numerique.
             </motion.p>
