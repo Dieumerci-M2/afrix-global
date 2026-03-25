@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { usePathname } from "next/navigation";
 import FormInscription from "./FormInscription";
 import Modal from "./Modal";
@@ -25,8 +25,14 @@ export default function Header() {
 
   return (
     <>
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:z-50 focus:absolute focus:left-4 focus:top-24 focus:bg-afrix-blue focus:text-white focus:p-2 focus:rounded"
+      >
+        Passer au contenu
+      </a>
       <header className="fixed inset-x-0 top-0 z-50">
-        <nav className="h-20 border-b border-white/10 bg-afrix-dark/90 backdrop-blur-md">
+        <nav aria-label="Navigation principale" className="h-20 border-b border-white/10 bg-afrix-dark/90 backdrop-blur-md">
           <div className="container mx-auto flex h-full items-center justify-between px-4 sm:px-6 lg:px-8">
             {/* Logo */}
             <Link

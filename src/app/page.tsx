@@ -9,7 +9,7 @@ import PartnersSection from "../components/PartnersSection";
 
 export default function HomePage() {
   return (
-    <main className="">
+    <main id="main-content" className="" aria-label="Contenu principal de la page">
       <HeroSection />
       <CounterSection />
       <AboutSection />

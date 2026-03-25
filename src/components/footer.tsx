@@ -40,6 +40,8 @@ export default function Footer() {
             <Link
               href="https://www.facebook.com/profile.php?id=61570369245195&locale=fr_FR"
               aria-label="Facebook"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-white-100/90 hover:text-afrix-blue/80 hover:scale-110 transition-transform"
             >
               <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
@@ -49,6 +51,8 @@ export default function Footer() {
             <Link
               href="https://x.com/Afrix_Global"
               aria-label="Twitter"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-white-100/90 hover:text-afrix-blue/80 hover:scale-110 transition-transform"
             >
               <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
@@ -58,6 +62,8 @@ export default function Footer() {
             <Link
               href="https://www.linkedin.com/company/afrix-global/posts/?feedView=all"
               aria-label="LinkedIn"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-white-100/90 hover:text-afrix-blue/80 hover:scale-110 transition-transform"
             >
               <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
