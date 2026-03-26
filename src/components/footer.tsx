@@ -123,8 +123,9 @@ export default function Footer() {
             <div className="space-y-3 text-white/80 text-sm">
               <p className="flex items-start gap-2">
                 <MapPin className="w-5 h-5 mt-0.5" />
-                286, Avenue de Musée, <br />
-                Commune de Karisimbi, Ville de Goma
+                269, Avenue de Musée, Quartier Himbi
+                <br />
+                Commune de Goma, Ville de Goma
               </p>
 
               <p className="flex items-center gap-2">
