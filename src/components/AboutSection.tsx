@@ -11,13 +11,13 @@ export default function AboutSection() {
   return (
     <MotionContainer
       id="about"
-      className="w-full min-h-screen h-52 flex flex-col justify-center gap-10 lg:gap-[5vw] items-center py-20 bg-afrix-dark"
+      className="w-full  h-auto flex flex-col justify-center lg:gap-[5vw] items-center pt-10 bg-afrix-dark"
       style={{
         backgroundImage:
           "radial-gradient(circle at 10% 100%, rgba(244, 180, 0, 0.3), transparent 25%), radial-gradient(circle at 100% 0%, rgba(219, 68, 55, 0.3), transparent 35%)",
       }}
     >
-      <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white text-center mt-16">
+      <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white text-center">
         <span className="text-afrix-green">A PROPOS DE </span> NOUS
       </h2>
 
