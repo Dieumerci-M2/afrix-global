@@ -74,7 +74,7 @@ export default function TestimonialsSection() {
 
   return (
     <section
-      className="w-full min-h-screen flex flex-col justify-center gap-10 lg:gap-[5vw] items-center py-16  bg-afrix-dark"
+      className="w-full h-auto flex flex-col justify-center gap-10 lg:gap-[5vw] items-center py-16  bg-afrix-dark"
       style={{
         backgroundImage:
           "radial-gradient(circle at 0% 100%, rgba(245, 180, 0, 0.302), transparent 35%), radial-gradient(circle at 100% 100%, rgba(15, 157, 88, 0.3), transparent 35%), radial-gradient(circle at 100% 0%, rgba(219, 68, 55, 0.3), transparent 25%)",
@@ -85,15 +85,15 @@ export default function TestimonialsSection() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
       >
-        <h2 className="text-3xl lg:text-4xl font-bold text-afrix-yellow text-center mb-10">
+        <h2 className="text-3xl lg:text-4xl font-bold text-afrix-yellow text-center">
           TESTIMONIALES
         </h2>
       </motion.div>
 
-      <div className="w-[90%] lg:w-[80%] flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
+      <div className="w-full lg:w-[80%] flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
         {/* MOBILE AVATARS */}
-        <div className="flex lg:hidden gap-3 overflow-x-auto pb-4 w-full justify-center">
-          {testimonials.map((t, i) => (
+        <div className="animate-partners-scroll w-full h-auto flex lg:hidden gap-3  py-4  justify-center items-cente overflow-hidden">
+          {[...testimonials].map((t, i) => (
             <button
               key={i}
               onClick={() => setActive(i)}
@@ -184,7 +184,7 @@ export default function TestimonialsSection() {
         <div className="max-w-xl space-y-6 text-center lg:text-left">
           <IoMdQuote className="text-afrix-red w-10 h-10" />
 
-          <p className="text-white/80 leading-relaxed text-lg transition-all duration-500">
+          <p className="text-white/80 leading-relaxed text-lg px-6 md:px-0 text-justify  transition-all duration-500">
             {testimonials[active].text}
           </p>
 

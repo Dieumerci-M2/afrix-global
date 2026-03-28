@@ -84,7 +84,7 @@ export default function ServicesSection() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
       >
-        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white text-center">
+        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold my-8 md:mb-0 md:mt-16 text-white text-center">
           NOS <span className="text-afrix-red">SERVICES</span>
         </h2>
       </motion.div>

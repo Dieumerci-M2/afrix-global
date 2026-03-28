@@ -11,7 +11,7 @@ export default function AboutSection() {
   return (
     <MotionContainer
       id="about"
-      className="w-full  h-auto flex flex-col justify-center lg:gap-[5vw] items-center pt-10 bg-afrix-dark"
+      className="w-full  flex flex-col justify-center lg:gap-[5vw] items-center pt-10 bg-afrix-dark"
       style={{
         backgroundImage:
           "radial-gradient(circle at 10% 100%, rgba(244, 180, 0, 0.3), transparent 25%), radial-gradient(circle at 100% 0%, rgba(219, 68, 55, 0.3), transparent 35%)",
@@ -21,7 +21,7 @@ export default function AboutSection() {
         <span className="text-afrix-green">A PROPOS DE </span> NOUS
       </h2>
 
-      <div className="w-[90%] h-full lg:w-[80%] flex flex-col items-start md:flex-row gap-6 mt-10 mx-auto">
+      <div className="w-[90%] lg:w-[80%] h-full  flex flex-col items-start mt-8 md:mt-0 md:flex-row gap-6 mx-auto">
         <div className=" w-full lg:w-1/2  relative">
           <div className="w-full h-full rounded md:rounded-bl-[5rem] overflow-hidden ">
             {" "}
@@ -31,7 +31,7 @@ export default function AboutSection() {
               className="object-cover"
             />
           </div>
-          <div className=" grid place-content-center w-20 md:w-28  h-20 md:h-28 text-center text-white bg-afrix-green rounded-full absolute -bottom-6 md:-top-12 -right-4 md:-left-10  ">
+          <div className=" grid place-content-center w-20 md:w-28  h-20 md:h-28 text-center text-white bg-afrix-green rounded-full absolute -bottom-6 md:-top-12 -right-2 md:-left-10  ">
             <h1 className="font-extrabold text-xl md:text-2xl">
               +
               <span>
@@ -43,11 +43,11 @@ export default function AboutSection() {
           </div>
         </div>
 
-        <div className=" full md:w-1/2 h-9/10 md:pl-12 md:flex flex-col justify-between  text-slate-200">
+        <div className=" full md:w-1/2 h-9/10 py-6 md:pl-12  flex  flex-col items-center md:items-start justify-between  text-slate-200">
           <h2 className=" text-2xl md:text-4xl text-afrix-blue  font-semibold">
             Des Compétences Techniques au Service de l’Innovation
           </h2>
-          <div className="my-4">
+          <div className="my-6 md:my-12">
             <p className="my-4 font-semibold">
               Notre équipe s’appuie sur une solide expertise technique et des
               formations professionnelles en technologies modernes pour
@@ -63,7 +63,7 @@ export default function AboutSection() {
             <Button
               variant={"default"}
               size={"lg"}
-              className="w-36 md:w-45 p-6   bg-afrix-blue  hover:bg-afrix-blue/80 cursor-pointer"
+              className="w-72 md:w-45 p-6  bg-afrix-blue  hover:bg-afrix-blue/80 cursor-pointer"
             >
               Savoir plus
             </Button>
