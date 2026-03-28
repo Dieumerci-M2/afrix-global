@@ -282,7 +282,7 @@ export function AboutContent() {
 
             {/* Vision */}
             <motion.div
-              className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 flex flex-col gap-4"
+              className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-4 sm:p-6 lg:p-8 flex flex-col gap-3 sm:gap-4"
               variants={item}
               whileHover={{
                 y: -10,
