@@ -92,13 +92,13 @@ export default function TestimonialsSection() {
 
       <div className="w-full lg:w-[80%] flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
         {/* MOBILE AVATARS */}
-        <div className="animate-partners-scroll w-full h-auto flex lg:hidden gap-3  py-4  justify-center items-cente overflow-hidden">
-          {[...testimonials].map((t, i) => (
+        {/* <div className="animate-partners-scroll w-max h-auto flex lg:hidden gap-3  py-4  justify-center items-cente overflow-hidden">
+          {[...testimonials, ...testimonials, ...testimonials].map((t, i) => (
             <button
               key={i}
-              onClick={() => setActive(i)}
+              onClick={() => setActive(i % testimonials.length)}
               className={`relative w-14 h-14 shrink-0 rounded-full overflow-hidden border-2 transition
-        ${i === active ? "border-afrix-yellow scale-110" : "border-white/20 opacity-70"}`}
+        ${i % testimonials.length === active ? "border-afrix-yellow scale-110" : "border-white/20 opacity-70"}`}
             >
               <Image
                 src={t.photo}
@@ -109,10 +109,34 @@ export default function TestimonialsSection() {
               />
             </button>
           ))}
+        </div> */}
+
+        <div className="w-full lg:hidden overflow-hidden py-4">
+          {/* On crée une "piste" infinie avec w-max */}
+          <div className="flex animate-partners-scroll w-max gap-3">
+            {/* On triple le tableau pour être sûr de remplir tout l'espace vide possible */}
+            {[...testimonials, ...testimonials, ...testimonials].map((t, i) => (
+              <button
+                key={i}
+                // Utiliser le modulo (%) pour garder la sélection synchronisée
+                onClick={() => setActive(i % testimonials.length)}
+                className={`relative w-14 h-14 shrink-0 rounded-full overflow-hidden border-2 transition
+        ${i % testimonials.length === active ? "border-afrix-yellow scale-110" : "border-white/20 opacity-70"}`}
+              >
+                <Image
+                  src={t.photo}
+                  alt={t.name}
+                  fill
+                  sizes="56px"
+                  className="object-cover"
+                />
+              </button>
+            ))}
+          </div>
         </div>
 
         {/* AVATARS COLUMN */}
-        <div className="relative h-105 w-55 items-center justify-center hidden lg:flex">
+        <div className="relative w-full md:w-55  h-105 items-center justify-center hidden lg:flex">
           {testimonials.map((t, i) => {
             // 1. Calcul de la distance circulaire la plus courte
             let diff = i - active;
