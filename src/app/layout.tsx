@@ -22,7 +22,7 @@ const robotoSlab = Roboto_Slab({
 export const metadata: Metadata = {
   title: "Afrix Global - EdTech et Formation Digitale en Afrique",
   description:
-    "Afrix Global est une entreprise EdTech innovante qui révolutionne l’éducation en Afrique grâce à la technologie et au numérique. Nous avons pour mission de rendre l’apprentissage accessible à tous, en proposant des solutions éducatives adaptées aux besoins des jeunes, des professionnels et des entrepreneurs.",
+    "Afrix Global offre des services en développement web, marketing digital et informatique, tout en proposant des formations pour renforcer les compétences digitales.",
   keywords: [
     "Afrix Global",
     "formations numérique",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Afrix Global - Éducation et innovation digitale en Afrique",
     description:
-      "Afrix Global est une entreprise EdTech innovante qui révolutionne l’éducation en Afrique grâce à la technologie et au numérique. Nous avons pour mission de rendre l’apprentissage accessible à tous, en proposant des solutions éducatives adaptées aux besoins des jeunes, des professionnels et des entrepreneurs.",
+      "Afrix Global offre des services en développement web, marketing digital et informatique, tout en proposant des formations pour renforcer les compétences digitales.",
     type: "website",
     locale: "fr_FR",
     siteName: "Afrix Global",
