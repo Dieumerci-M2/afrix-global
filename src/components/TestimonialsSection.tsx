@@ -92,25 +92,6 @@ export default function TestimonialsSection() {
 
       <div className="w-full lg:w-[80%] flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
         {/* MOBILE AVATARS */}
-        {/* <div className="animate-partners-scroll w-max h-auto flex lg:hidden gap-3  py-4  justify-center items-cente overflow-hidden">
-          {[...testimonials, ...testimonials, ...testimonials].map((t, i) => (
-            <button
-              key={i}
-              onClick={() => setActive(i % testimonials.length)}
-              className={`relative w-14 h-14 shrink-0 rounded-full overflow-hidden border-2 transition
-        ${i % testimonials.length === active ? "border-afrix-yellow scale-110" : "border-white/20 opacity-70"}`}
-            >
-              <Image
-                src={t.photo}
-                alt={t.name}
-                fill
-                sizes="56px"
-                className="object-cover"
-              />
-            </button>
-          ))}
-        </div> */}
-
         <div className="w-full lg:hidden overflow-hidden py-4">
           {/* On crée une "piste" infinie avec w-max */}
           <div className="flex animate-partners-scroll w-max gap-3">
