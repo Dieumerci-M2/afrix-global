@@ -73,7 +73,7 @@ export default function ServicesSection() {
   return (
     <section
       id="services"
-      className="w-full min-h-screen flex flex-col justify-center gap-10 lg:gap-[5vw] items-center py-20  bg-afrix-dark"
+      className="w-full flex flex-col justify-center lg:gap-[5vw] items-center bg-afrix-dark"
       style={{
         backgroundImage:
           "radial-gradient(circle at 10% 0%, rgba(244, 180, 0, 0.3), transparent 25%), radial-gradient(circle at 100% 100%, rgba(15, 157, 88, 0.3), transparent 35%)",
@@ -84,7 +84,7 @@ export default function ServicesSection() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
       >
-        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white text-center">
+        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold my-8 md:mb-0 md:mt-16 text-white text-center">
           NOS <span className="text-afrix-red">SERVICES</span>
         </h2>
       </motion.div>
@@ -107,7 +107,9 @@ export default function ServicesSection() {
             className="w-full sm:w-[45%] lg:w-[30%] glass rounded-2xl border border-white/20 text-center transition-transform hover:-translate-y-1 hover:shadow-2xl bg-black/30"
           >
             <CardContent className="p-8 flex flex-col items-center gap-4">
-              <service.icon                aria-hidden="true"                className={`w-12 h-12 lg:w-16 lg:h-16 ${service.color}`}
+              <service.icon
+                aria-hidden="true"
+                className={`w-12 h-12 lg:w-16 lg:h-16 ${service.color}`}
               />
               <h3 className="text-lg font-bold text-white">{service.title}</h3>
               <p className="text-white/70 text-sm leading-relaxed">

@@ -74,7 +74,7 @@ export default function TestimonialsSection() {
 
   return (
     <section
-      className="w-full min-h-screen flex flex-col justify-center gap-10 lg:gap-[5vw] items-center py-16  bg-afrix-dark"
+      className="w-full h-auto flex flex-col justify-center gap-10 lg:gap-[5vw] items-center py-16  bg-afrix-dark"
       style={{
         backgroundImage:
           "radial-gradient(circle at 0% 100%, rgba(245, 180, 0, 0.302), transparent 35%), radial-gradient(circle at 100% 100%, rgba(15, 157, 88, 0.3), transparent 35%), radial-gradient(circle at 100% 0%, rgba(219, 68, 55, 0.3), transparent 25%)",
@@ -85,34 +85,39 @@ export default function TestimonialsSection() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
       >
-        <h2 className="text-3xl lg:text-4xl font-bold text-afrix-yellow text-center mb-10">
+        <h2 className="text-3xl lg:text-4xl font-bold text-afrix-yellow text-center">
           TESTIMONIALES
         </h2>
       </motion.div>
 
-      <div className="w-[90%] lg:w-[80%] flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
+      <div className="w-full lg:w-[80%] flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
         {/* MOBILE AVATARS */}
-        <div className="flex lg:hidden gap-3 overflow-x-auto pb-4 w-full justify-center">
-          {testimonials.map((t, i) => (
-            <button
-              key={i}
-              onClick={() => setActive(i)}
-              className={`relative w-14 h-14 shrink-0 rounded-full overflow-hidden border-2 transition
-        ${i === active ? "border-afrix-yellow scale-110" : "border-white/20 opacity-70"}`}
-            >
-              <Image
-                src={t.photo}
-                alt={t.name}
-                fill
-                sizes="56px"
-                className="object-cover"
-              />
-            </button>
-          ))}
+        <div className="w-full lg:hidden overflow-hidden py-4">
+          {/* On crée une "piste" infinie avec w-max */}
+          <div className="flex animate-partners-scroll w-max gap-3">
+            {/* On triple le tableau pour être sûr de remplir tout l'espace vide possible */}
+            {[...testimonials, ...testimonials, ...testimonials].map((t, i) => (
+              <button
+                key={i}
+                // Utiliser le modulo (%) pour garder la sélection synchronisée
+                onClick={() => setActive(i % testimonials.length)}
+                className={`relative w-14 h-14 shrink-0 rounded-full overflow-hidden border-2 transition
+        ${i % testimonials.length === active ? "border-afrix-yellow scale-110" : "border-white/20 opacity-70"}`}
+              >
+                <Image
+                  src={t.photo}
+                  alt={t.name}
+                  fill
+                  sizes="56px"
+                  className="object-cover"
+                />
+              </button>
+            ))}
+          </div>
         </div>
 
         {/* AVATARS COLUMN */}
-        <div className="relative h-105 w-55 items-center justify-center hidden lg:flex">
+        <div className="relative w-full md:w-55  h-105 items-center justify-center hidden lg:flex">
           {testimonials.map((t, i) => {
             // 1. Calcul de la distance circulaire la plus courte
             let diff = i - active;
@@ -184,7 +189,7 @@ export default function TestimonialsSection() {
         <div className="max-w-xl space-y-6 text-center lg:text-left">
           <IoMdQuote className="text-afrix-red w-10 h-10" />
 
-          <p className="text-white/80 leading-relaxed text-lg transition-all duration-500">
+          <p className="text-white/80 leading-relaxed text-lg px-6 md:px-0 text-justify  transition-all duration-500">
             {testimonials[active].text}
           </p>
 

@@ -48,7 +48,7 @@ export default function PublicationSection() {
   return (
     <section
       id="publications"
-      className="w-full min-h-screen bg-afrix-dark flex flex-col items-center gap-10 lg:gap-[5vw] py-20"
+      className="w-full h-auto bg-afrix-dark flex flex-col items-center gap-10 lg:gap-[5vw]"
       style={{
         backgroundImage:
           "radial-gradient(circle at 0% 0%, rgba(66, 133, 244, 0.3), transparent 25%), radial-gradient(circle at 100% 100%, rgba(219, 68, 55, 0.3), transparent 25%)",
@@ -59,6 +59,7 @@ export default function PublicationSection() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
       >
+<<<<<<< HEAD
         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white text-center mb-6 sm:mb-8 lg:mb-10">
           NOS RECENTES <span className="text-afrix-blue">PUBLICATIONS</span>
         </h2>

@@ -17,16 +17,17 @@ export default function HeroSection() {
           "radial-gradient(circle at 10% 100%, rgba(244, 180, 0, 0.05), transparent 35%), radial-gradient(circle at 100% 0%, rgba(219, 68, 55, 0.3), transparent 35%)",
       }}
     >
+<<<<<<< HEAD
       <div className="container mx-auto px-4 flex flex-col lg:flex-row md:gap-48 md:text-center  items-center gap-8 lg:gap-[5vw] relative md:static top-0 md:top-40">
         {/* Left side */}
         <motion.div
-          className=" w-full lg:w-1/2 mb-8 lg:mb-0 z-2 md:z-0"
+          className="w-full md:w-1/2"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
           <motion.h1
-            className="text-4xl  text-center md:text-start sm:text-5xl md:text-6xl lg:text-[6vw] font-black italic  leading-tight text-white"
+            className="text-4xl  text-center md:text-start sm:text-5xl md:text-6xl lg:text-[6vw] font-black  md:italic  leading-tight text-white"
             style={{ fontFamily: "var(--font-roboto-slab)" }}
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -38,6 +39,7 @@ export default function HeroSection() {
           </motion.h1>
 
           {/* buttons hero section  */}
+<<<<<<< HEAD
           <MotionContainer className="flex flex-col sm:flex-row justify-center md:justify-start px-4 sm:px-10 md:px-0 gap-4 sm:gap-8 mt-6 sm:mt-8 ml-5">
             <Link href="/apropos">
               {" "}
@@ -60,22 +62,22 @@ export default function HeroSection() {
 
         {/* Right side - Container with relative positioning */}
 
+<<<<<<< HEAD
         <div className="relative -top-20 md:-top-36 lg:top-28 w-full h-full md:w-[80%] lg:w-1/2 flex items-center justify-center min-h-87.5 sm:min-h-100 lg:min-h-[35vw]">
           <motion.div
-            className="   grid place-items-center w-150 h-150 md:absolute -top-25 z-1 md:z-0"
+            className=" relative"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
           >
             <Image
               src={LogoAfrix}
               alt="Logo Afrix Global"
-              width={200}
-              height={200}
               priority
+              className="opacity-65"
             />
           </motion.div>
           <motion.div
-            className="absolute  md:top-12 w-full md:w-auto h-auto  z-2 md:z-0"
+            className="absolute top-2/12 z-2"
             initial={{ opacity: 1, x: "120%" }}
             animate={{ opacity: 1, x: 0 }}
             transition={{
