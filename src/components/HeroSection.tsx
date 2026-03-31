@@ -17,7 +17,6 @@ export default function HeroSection() {
           "radial-gradient(circle at 10% 100%, rgba(244, 180, 0, 0.05), transparent 35%), radial-gradient(circle at 100% 0%, rgba(219, 68, 55, 0.3), transparent 35%)",
       }}
     >
-<<<<<<< HEAD
       <div className="container mx-auto px-4 flex flex-col lg:flex-row md:gap-48 md:text-center  items-center gap-8 lg:gap-[5vw] relative md:static top-0 md:top-40">
         {/* Left side */}
         <motion.div
@@ -39,7 +38,7 @@ export default function HeroSection() {
           </motion.h1>
 
           {/* buttons hero section  */}
-<<<<<<< HEAD
+
           <MotionContainer className="flex flex-col sm:flex-row justify-center md:justify-start px-4 sm:px-10 md:px-0 gap-4 sm:gap-8 mt-6 sm:mt-8 ml-5">
             <Link href="/apropos">
               {" "}
@@ -62,7 +61,6 @@ export default function HeroSection() {
 
         {/* Right side - Container with relative positioning */}
 
-<<<<<<< HEAD
         <div className="relative -top-20 md:-top-36 lg:top-28 w-full h-full md:w-[80%] lg:w-1/2 flex items-center justify-center min-h-87.5 sm:min-h-100 lg:min-h-[35vw]">
           <motion.div
             className=" relative"

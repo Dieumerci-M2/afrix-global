@@ -59,7 +59,6 @@ export default function PublicationSection() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
       >
-<<<<<<< HEAD
         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white text-center mb-6 sm:mb-8 lg:mb-10">
           NOS RECENTES <span className="text-afrix-blue">PUBLICATIONS</span>
         </h2>
