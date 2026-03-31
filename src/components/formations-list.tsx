@@ -152,7 +152,7 @@ export function FormationsList() {
         className="w-full py-16 bg-afrix-dark flex flex-col items-center gap-12"
         style={{
           backgroundImage:
-            "radial-gradient(circle at 0% 0%, rgba(244, 180, 0, 0.3), transparent 25%), radial-gradient(circle at 100% 100%, rgba(66, 133, 244, 0.3), transparent 35%)",
+            "radial-gradient(circle at 0% 0%, rgba(66, 133, 244, 0.3), transparent 20%), radial-gradient(circle at 100% 0%, rgba(219, 68, 55, 0.3), transparent 15%)",
         }}
       >
         <motion.div

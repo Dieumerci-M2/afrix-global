@@ -51,7 +51,7 @@ export default function PublicationSection() {
       className="w-full min-h-screen bg-afrix-dark flex flex-col items-center gap-10 lg:gap-[5vw] py-20"
       style={{
         backgroundImage:
-          "radial-gradient(circle at 0% 0%, rgba(66, 133, 244, 0.3), transparent 25%), radial-gradient(circle at 100% 100%, rgba(219, 68, 55, 0.3), transparent 25%)",
+          "radial-gradient(circle at 0% 0%, rgba(219, 68, 55, 0.15), transparent 35%), radial-gradient(circle at 100% 100%, rgba(15, 157, 88, 0.3), transparent 35%)",
       }}
     >
       <motion.div

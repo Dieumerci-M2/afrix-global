@@ -18,7 +18,7 @@ export default function PartnersSection() {
       className="w-full min-h-[50vh] py-20 bg-afrix-dark flex flex-col items-center gap-10 overflow-hidden"
       style={{
         backgroundImage:
-          "radial-gradient(circle at 100% 0%, rgba(15, 157, 88, 0.3), transparent 35%), radial-gradient(circle at 0% 0%, rgba(245, 180, 0, 0.302), transparent 35%)",
+          " radial-gradient(circle at 0% 0%, rgba(245, 180, 0, 0.302), transparent 26%)",
       }}
     >
       <motion.div

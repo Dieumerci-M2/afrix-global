@@ -14,7 +14,7 @@ export default function HeroSection() {
       className="relative flex flex-col items-center justify-center w-full h-screen bg-afrix-dark pt-30 overflow-hidden "
       style={{
         backgroundImage:
-          "radial-gradient(circle at 10% 100%, rgba(244, 180, 0, 0.05), transparent 35%), radial-gradient(circle at 100% 0%, rgba(219, 68, 55, 0.3), transparent 35%)",
+          "radial-gradient(circle at 10% 100%, rgba(244, 180, 0, 0.05), transparent 35%), radial-gradient(circle at 100% 50%, rgba(219, 68, 55, 0.3), transparent 35%)",
       }}
     >
       <div className="container mx-auto  px-4 flex flex-col lg:flex-row items-center gap-8 lg:gap-[5vw] relative md:static top-40">

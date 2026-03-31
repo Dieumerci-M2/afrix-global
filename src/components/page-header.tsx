@@ -19,7 +19,7 @@ export function PageHeader({
       className="relative w-full bg-afrix-dark py-20"
       style={{
         backgroundImage:
-          "radial-gradient(circle at 0% 100%, rgba(66, 133, 244, 0.3), transparent 25%), radial-gradient(circle at 100% 100%, rgba(219, 68, 55, 0.3), transparent 35%)",
+          "radial-gradient(circle at 0% 100%, rgba(66, 133, 244, 0.3), transparent 25%), radial-gradient(circle at 100% 100%, rgba(219, 68, 55, 0.3), transparent 20%)",
       }}
     >
       <motion.div
