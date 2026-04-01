@@ -48,7 +48,7 @@ export default function CounterSection() {
         stagger={0.2}
         style={{
           backgroundImage:
-            "radial-gradient(circle at 100% 50%, rgba(219, 68, 55, 0.3), transparent 35%)",
+            "radial-gradient(circle at 100% 50%, rgba(0, 0, 0, 0.3), transparent 35%)",
         }}
       >
         {counters.map((counter) => (

@@ -125,7 +125,7 @@ export function ServicesDetail() {
       className="w-full py-16 bg-afrix-dark flex flex-col items-center gap-12"
       style={{
         backgroundImage:
-          "radial-gradient(circle at 10% 0%, rgba(244, 180, 0, 0.3), transparent 25%), radial-gradient(circle at 100% 100%, rgba(15, 157, 88, 0.3), transparent 35%)",
+          "radial-gradient(circle at 0% 0%, rgba(66, 133, 244, 0.3), transparent 20%), radial-gradient(circle at 100% 0%, rgba(219, 68, 55, 0.3), transparent 16%)",
       }}
     >
       {/* Services Grid */}
@@ -175,7 +175,7 @@ export function ServicesDetail() {
       </motion.div>
 
       {/* CTA */}
-      <div className="flex flex-col items-center gap-4 mt-8">
+      {/* <div className="flex flex-col items-center gap-4 mt-8">
         <p className="text-white/80 text-base text-center max-w-150">
           {
             "Vous avez un projet en tete ? Contactez-nous pour discuter de vos besoins et decouvrir comment nous pouvons vous accompagner."
@@ -187,7 +187,7 @@ export function ServicesDetail() {
         >
           <Link href="/contact">Contactez-nous</Link>
         </Button>
-      </div>
+      </div> */}
     </section>
   );
 }

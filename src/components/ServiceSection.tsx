@@ -76,7 +76,7 @@ export default function ServicesSection() {
       className="w-full flex flex-col justify-center lg:gap-[5vw] items-center bg-afrix-dark"
       style={{
         backgroundImage:
-          "radial-gradient(circle at 10% 0%, rgba(244, 180, 0, 0.3), transparent 25%), radial-gradient(circle at 100% 100%, rgba(15, 157, 88, 0.3), transparent 35%)",
+          "radial-gradient(circle at 10% 0%, rgba(244, 180, 0, 0.3), transparent 25%), radial-gradient(circle at 100% 100%, rgba(56, 129, 245, 0.15), transparent 35%)",
       }}
     >
       <motion.div

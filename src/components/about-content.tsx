@@ -150,7 +150,7 @@ export function AboutContent() {
         className="w-full py-20"
         style={{
           backgroundImage:
-            "radial-gradient(circle at 0% 50%, rgba(48, 180, 63, 0.15), transparent 30%)",
+            "radial-gradient(circle at 100% 100%,  rgba(244, 180, 0, 0.3), transparent 30%), radial-gradient(circle at 0% 0%,rgba(66, 133, 244, 0.3), transparent 25%), radial-gradient(circle at 100% 0%, rgba(219, 68, 55, 0.3), transparent 20%)",
         }}
       >
         <div className="w-[90%] lg:w-[80%] mx-auto flex flex-col lg:flex-row gap-12 lg:gap-20 items-center">
@@ -205,11 +205,12 @@ export function AboutContent() {
                 transition: { type: "spring", stiffness: 300, damping: 20 },
               }}
             >
-              Afrix Global est ne d&apos;une vision simple mais ambitieuse : rendre
-              l&apos;education numerique accessible a tous en Afrique. Fonde par une
-              equipe de passionnes de technologie et d&apos;education, nous avons
-              commence notre aventure avec la conviction que la technologie peut
-              etre un puissant levier de changement social.
+              Afrix Global est ne d&apos;une vision simple mais ambitieuse :
+              rendre l&apos;education numerique accessible a tous en Afrique.
+              Fonde par une equipe de passionnes de technologie et
+              d&apos;education, nous avons commence notre aventure avec la
+              conviction que la technologie peut etre un puissant levier de
+              changement social.
             </motion.p>
             <motion.p
               className="text-white/80 text-base leading-relaxed"
@@ -221,9 +222,9 @@ export function AboutContent() {
             >
               Depuis notre creation, nous avons forme des centaines de jeunes
               talents, les preparant aux defis du marche du travail moderne.
-              Notre approche pratique et notre engagement envers l&apos;excellence
-              nous ont permis de devenir un acteur reconnu dans le domaine de la
-              formation numerique.
+              Notre approche pratique et notre engagement envers
+              l&apos;excellence nous ont permis de devenir un acteur reconnu
+              dans le domaine de la formation numerique.
             </motion.p>
           </motion.div>
         </div>
@@ -234,7 +235,7 @@ export function AboutContent() {
         className="w-full py-20"
         style={{
           backgroundImage:
-            "radial-gradient(circle at 100% 0%, rgba(66, 133, 244, 0.2), transparent 30%), radial-gradient(circle at 0% 100%, rgba(219, 68, 55, 0.15), transparent 30%)",
+            "radial-gradient(circle at 100% 0%,  rgba(244, 180, 0, 0.3), transparent 30%), radial-gradient(circle at 0% 100%, rgba(219, 68, 55, 0.15), transparent 30%)",
         }}
       >
         <div className="w-[90%] lg:w-[80%] mx-auto mt-16">
@@ -306,7 +307,13 @@ export function AboutContent() {
       </section>
 
       {/* Nos Valeurs */}
-      <section className="w-full py-20">
+      <section
+        className="w-full py-20"
+        style={{
+          backgroundImage:
+            "radial-gradient(circle at 0% 10%, rgba(219, 68, 55, 0.15), transparent 30%), radial-gradient(circle at 100% 100%, rgba(66, 133, 244, 0.15), transparent 25%)",
+        }}
+      >
         <div className="w-[90%] lg:w-[80%] mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -359,7 +366,7 @@ export function AboutContent() {
         className="w-full py-16"
         style={{
           backgroundImage:
-            "radial-gradient(circle at 50% 50%, rgba(66, 133, 244, 0.15), transparent 50%)",
+            "radial-gradient(circle at 0% 100%, rgba(244, 180, 0, 0.3), transparent 20%), radial-gradient(circle at 100% 0%, rgba(66, 133, 244, 0.15), transparent 25%) ",
         }}
       >
         <div className="w-[90%] lg:w-[80%] mx-auto">
@@ -395,7 +402,7 @@ export function AboutContent() {
         className="w-full py-20 bg-afrix-dark flex flex-col items-center"
         style={{
           backgroundImage:
-            "radial-gradient(circle at 0% 100%, rgba(15, 157, 88, 0.3), transparent 35%), radial-gradient(circle at 100% 0%, rgba(244, 180, 0, 0.3), transparent 35%)",
+            "radial-gradient(circle at 0% 0%,  rgba(244, 180, 0, 0.3), transparent 15%), radial-gradient(circle at 90% 50%, rgba(15, 157, 88, 0.3), transparent 40%)",
         }}
       >
         <motion.div
@@ -489,7 +496,7 @@ export function AboutContent() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
       >
-        <div className="w-[90%] lg:w-[80%] mx-auto bg-gradient-to-r from-afrix-blue/20 to-afrix-green/20 border border-white/10 rounded-3xl p-8 sm:p-12 flex flex-col items-center text-center gap-6">
+        <div className="w-[90%] lg:w-[80%] mx-auto  rounded-3xl p-8 sm:p-12 flex flex-col items-center text-center gap-6">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white">
             Pret a rejoindre l'aventure ?
           </h2>

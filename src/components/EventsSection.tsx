@@ -39,7 +39,7 @@ export default function EventsSection() {
       className="w-full h-auto flex flex-col justify-center gap-10 items-center py-12 md:py-20  bg-afrix-dark"
       style={{
         backgroundImage:
-          "radial-gradient(circle at 0% 100%, rgba(66, 133, 244, 0.3), transparent 25%), radial-gradient(circle at 100% 0%, rgba(15, 157, 88, 0.3), transparent 35%)",
+          "radial-gradient(circle at 0% 100%, rgba(219, 68, 55, 0.15), transparent 35%), radial-gradient(circle at 100% 0%, rgba(56, 129, 245, 0.15), transparent 35%)",
       }}
     >
       <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white text-center">

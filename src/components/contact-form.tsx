@@ -53,7 +53,7 @@ export function ContactForm() {
       className="w-full py-16 bg-afrix-dark flex flex-col items-center gap-12"
       style={{
         backgroundImage:
-          "radial-gradient(circle at 10% 100%, rgba(15, 157, 88, 0.3), transparent 35%), radial-gradient(circle at 100% 0%, rgba(66, 133, 244, 0.3), transparent 35%)",
+          "radial-gradient(circle at 0% 0%, rgba(66, 133, 244, 0.3), transparent 24%), radial-gradient(circle at 100% 0%, rgba(219, 68, 55, 0.3), transparent 18%)",
       }}
     >
       <div className="w-[90%] max-w-300 flex flex-col lg:flex-row gap-10">
