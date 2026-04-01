@@ -75,14 +75,7 @@ const formations = [
     color: "bg-afrix-yellow",
     description:
       "Devenez un expert en marketing digital : SEO, publicite en ligne, reseaux sociaux et strategie de contenu.",
-    modules: [
-      "SEO",
-      "Google Ads",
-      "Social Media",
-      "Email Marketing",
-      "Analytics",
-      "Projet final",
-    ],
+    modules: ["SEO", "Google Ads", "Social Media", "Analytics", "Projet final"],
   },
   {
     title: "Communication Visuelle",
@@ -112,7 +105,7 @@ const formations = [
     rating: 4.8,
     color: "bg-afrix-green",
     description:
-      "Apprenez a diagnostiquer, conseiller et optimiser les systemes informatiques des entreprises.",
+      "Apprenez à diagnostiquer, conseiller et optimiser les systèmes informatiques pour améliorer la performance des entreprises.",
     modules: [
       "Audit IT",
       "Cloud",
@@ -131,11 +124,10 @@ const formations = [
     rating: 4.5,
     color: "bg-afrix-blue",
     description:
-      "Produisez des textes clairs, engageants et optimises pour le web.",
+      "Apprenez à produire des contenus clairs, engageants et optimisés pour le web et les supports digitaux.",
     modules: [
       "Copywriting",
-      "Redaction web",
-      "SEO writing",
+      "SEO",
       "Storytelling",
       "Contenus sociaux",
       "Projet final",
@@ -178,7 +170,7 @@ export function FormationsList() {
                   src={formation.image}
                   alt={formation.title}
                   fill
-                  className="object-cover group-hover:scale-110 transition-transform duration-500"
+                  className="object-cover group-hover:scale-100 transition-transform duration-300"
                 />
                 <div className="absolute top-3 left-3">
                   <Badge className={`${formation.color} text-white text-xs`}>
@@ -215,7 +207,7 @@ export function FormationsList() {
                   {formation.modules.slice(0, 4).map((mod) => (
                     <span
                       key={mod}
-                      className="text-xs text-white/50 bg-white/5 px-2 py-1 rounded-md"
+                      className="text-xs text-white/50 bg-white/5 w-[45%] px-2 py-1 rounded-md"
                     >
                       {mod}
                     </span>
