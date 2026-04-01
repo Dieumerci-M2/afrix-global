@@ -11,13 +11,13 @@ import { MotionContainer } from "./MotionContainer";
 export default function HeroSection() {
   return (
     <section
-      className="grid justify-items-center w-full h-screen px-10 md:px-0  pt-32 md:pt-36 mx-auto bg-afrix-dark overflow-hidden"
+      className="relative flex flex-col items-center justify-center md:pl-20 w-full min-h-screen bg-afrix-dark pt-20 md:pt-30 lg:pl-10 lg:pr-10  overflow-hidden"
       style={{
         backgroundImage:
           "radial-gradient(circle at 10% 100%, rgba(244, 180, 0, 0.05), transparent 35%), radial-gradient(circle at 100% 50%, rgba(219, 68, 55, 0.3), transparent 35%)",
       }}
     >
-      <div className="container w-full flex flex-col md:flex-row justify-between items-center relative">
+      <div className="container mx-auto px-4 flex flex-col lg:flex-row md:gap-48 md:text-center  items-center gap-8 lg:gap-[5vw] relative md:static top-0 md:top-40">
         {/* Left side */}
         <motion.div
           className="w-full md:w-1/2"
@@ -38,7 +38,8 @@ export default function HeroSection() {
           </motion.h1>
 
           {/* buttons hero section  */}
-          <MotionContainer className="flex flex-col md:flex-row justify-center md:justify-start  gap-8 mt-8">
+
+          <MotionContainer className="flex flex-col sm:flex-row justify-center md:justify-start px-4 sm:px-10 md:px-0 gap-4 sm:gap-8 mt-6 sm:mt-8 ml-5">
             <Link href="/apropos">
               {" "}
               <Button
@@ -60,7 +61,7 @@ export default function HeroSection() {
 
         {/* Right side - Container with relative positioning */}
 
-        <div className="absolute right-0 -bottom-[1%] w-full md:w-1/2 mt-0 md:mt-12">
+        <div className="relative -top-20 md:-top-36 lg:top-28 w-full h-full md:w-[80%] lg:w-1/2 flex items-center justify-center min-h-87.5 sm:min-h-100 lg:min-h-[35vw]">
           <motion.div
             className=" relative"
             initial={{ opacity: 0 }}
