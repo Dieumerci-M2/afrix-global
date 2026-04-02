@@ -7,7 +7,7 @@ import { Calendar, User, ArrowRight } from "lucide-react";
 const articles = [
   {
     title: "Les tendances du developpement web en 2026",
-    image: "/images/blog01.jpg",
+    image: "/images/blog/blog01.jpg",
     date: "03 Janvier 2026",
     author: "David Kitenge",
     category: "Tech",
@@ -17,7 +17,7 @@ const articles = [
   },
   {
     title: "Comment debuter dans le marketing digital en Afrique",
-    image: "/images/blog02.jpg",
+    image: "/images/blog/blog02.jpg",
     date: "27 Decembre 2025",
     author: "prud Zihalirwa",
     category: "Marketing",
@@ -27,7 +27,7 @@ const articles = [
   },
   {
     title: "Retour sur le Tech Summit 2025",
-    image: "/images/blog03.jpg",
+    image: "/images/blog/blog03.jpg",
     date: "15 Decembre 2025",
     author: "Dieumerci Muhindo",
     category: "Evenements",
@@ -37,7 +37,7 @@ const articles = [
   },
   {
     title: "5 competences numeriques indispensables pour 2026",
-    image: "/images/blog04.jpg",
+    image: "/images/blog/blog04.jpg",
     date: "10 Decembre 2025",
     author: "Lemoisson Metre",
     category: "Formation",
@@ -47,7 +47,7 @@ const articles = [
   },
   {
     title: "L'impact de l'intelligence artificielle sur l'éducation en Afrique",
-    image: "/images/blog05.jpg",
+    image: "/images/blog/blog05.jpg",
     date: "01 Decembre 2025",
     author: "john Santos",
     category: "Tech",
@@ -57,7 +57,7 @@ const articles = [
   },
   {
     title: "Temoignage : de formateur a entrepreneur",
-    image: "/images/blog06.jpg",
+    image: "/images/blog/blog06.jpg",
     date: "17 Novembre 2025",
     author: "Justin Kasereka",
     category: "Marketing",
@@ -67,7 +67,7 @@ const articles = [
   },
   {
     title: "Temoignage : de formateur a entrepreneur",
-    image: "/images/blog07.jpg",
+    image: "/images/blog/blog07.jpg",
     date: "17 Decembre 2025",
     author: "Andrino Akuda",
     category: "Temoignage",
