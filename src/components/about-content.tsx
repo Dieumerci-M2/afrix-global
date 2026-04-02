@@ -150,7 +150,7 @@ export function AboutContent() {
         className="w-full py-20"
         style={{
           backgroundImage:
-            "radial-gradient(circle at 100% 100%,  rgba(244, 180, 0, 0.3), transparent 30%), radial-gradient(circle at 0% 0%,rgba(66, 133, 244, 0.3), transparent 25%), radial-gradient(circle at 100% 0%, rgba(219, 68, 55, 0.3), transparent 20%)",
+            "radial-gradient(circle at 100% 100%,  rgba(244, 180, 0, 0.3), transparent 25%), radial-gradient(circle at 0% 0%,rgba(66, 133, 244, 0.3), transparent 25%), radial-gradient(circle at 100% 0%, rgba(219, 68, 55, 0.3), transparent 20%)",
         }}
       >
         <div className="w-[90%] lg:w-[80%] mx-auto flex flex-col lg:flex-row gap-12 lg:gap-20 items-center">
@@ -235,7 +235,7 @@ export function AboutContent() {
         className="w-full py-20"
         style={{
           backgroundImage:
-            "radial-gradient(circle at 100% 0%,  rgba(244, 180, 0, 0.3), transparent 30%), radial-gradient(circle at 0% 100%, rgba(219, 68, 55, 0.15), transparent 30%)",
+            "radial-gradient(circle at 100% 0%,  rgba(244, 180, 0, 0.3), transparent 25%), radial-gradient(circle at 0% 100%, rgba(224, 58, 43, 0.15), transparent 30%)",
         }}
       >
         <div className="w-[90%] lg:w-[80%] mx-auto mt-16">
@@ -311,7 +311,7 @@ export function AboutContent() {
         className="w-full py-20"
         style={{
           backgroundImage:
-            "radial-gradient(circle at 0% 10%, rgba(219, 68, 55, 0.15), transparent 30%), radial-gradient(circle at 100% 100%, rgba(66, 133, 244, 0.15), transparent 25%)",
+            "radial-gradient(circle at 0% 10%, rgba(224, 58, 43, 0.15), transparent 30%), radial-gradient(circle at 100% 100%, rgba(66, 133, 244, 0.15), transparent 25%)",
         }}
       >
         <div className="w-[90%] lg:w-[80%] mx-auto">
@@ -366,7 +366,7 @@ export function AboutContent() {
         className="w-full py-16"
         style={{
           backgroundImage:
-            "radial-gradient(circle at 0% 100%, rgba(244, 180, 0, 0.3), transparent 20%), radial-gradient(circle at 100% 0%, rgba(66, 133, 244, 0.15), transparent 25%) ",
+            " radial-gradient(circle at 100% 0%, rgba(66, 133, 244, 0.15), transparent 25%) ",
         }}
       >
         <div className="w-[90%] lg:w-[80%] mx-auto">
@@ -402,7 +402,7 @@ export function AboutContent() {
         className="w-full py-20 bg-afrix-dark flex flex-col items-center"
         style={{
           backgroundImage:
-            "radial-gradient(circle at 0% 0%,  rgba(244, 180, 0, 0.3), transparent 15%), radial-gradient(circle at 90% 50%, rgba(15, 157, 88, 0.3), transparent 40%)",
+            "radial-gradient(circle at 0% 50%, rgba(15, 157, 88, 0.3), transparent 40%)",
         }}
       >
         <motion.div

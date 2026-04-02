@@ -7,7 +7,7 @@ import { Calendar, User, ArrowRight } from "lucide-react";
 const articles = [
   {
     title: "Les tendances du developpement web en 2026",
-    image: "/images/pub1.jpg",
+    image: "/images/blog/blog01.jpg",
     date: "03 Janvier 2026",
     author: "David Kitenge",
     category: "Tech",
@@ -17,7 +17,7 @@ const articles = [
   },
   {
     title: "Comment debuter dans le marketing digital en Afrique",
-    image: "/images/pub2.jpg",
+    image: "/images/blog/blog02.jpg",
     date: "27 Decembre 2025",
     author: "prud Zihalirwa",
     category: "Marketing",
@@ -27,7 +27,7 @@ const articles = [
   },
   {
     title: "Retour sur le Tech Summit 2025",
-    image: "/images/pub3.jpg",
+    image: "/images/blog/blog03.jpg",
     date: "15 Decembre 2025",
     author: "Dieumerci Muhindo",
     category: "Evenements",
@@ -37,7 +37,7 @@ const articles = [
   },
   {
     title: "5 competences numeriques indispensables pour 2026",
-    image: "/images/event.jpg",
+    image: "/images/blog/blog04.jpg",
     date: "10 Decembre 2025",
     author: "Lemoisson Metre",
     category: "Formation",
@@ -46,8 +46,8 @@ const articles = [
       "Le marche du travail evolue rapidement. Voici les 5 competences numeriques les plus recherchees par les employeurs cette annee.",
   },
   {
-    title: "L'impact de l'IA sur l'education en Afrique",
-    image: "/images/about-1.jpg",
+    title: "L'impact de l'intelligence artificielle sur l'éducation en Afrique",
+    image: "/images/blog/blog05.jpg",
     date: "01 Decembre 2025",
     author: "john Santos",
     category: "Tech",
@@ -57,9 +57,19 @@ const articles = [
   },
   {
     title: "Temoignage : de formateur a entrepreneur",
-    image: "/images/about-2.jpg",
-    date: "20 Novembre 2025",
-    author: "Bienvenu Mupenzi",
+    image: "/images/blog/blog06.jpg",
+    date: "17 Novembre 2025",
+    author: "Justin Kasereka",
+    category: "Marketing",
+    categoryColor: "bg-afrix-green",
+    excerpt:
+      "Moussa partage son parcours de formateur en developpement mobile a la creation de sa propre startup technologique.",
+  },
+  {
+    title: "Temoignage : de formateur a entrepreneur",
+    image: "/images/blog/blog07.jpg",
+    date: "17 Decembre 2025",
+    author: "Andrino Akuda",
     category: "Temoignage",
     categoryColor: "bg-afrix-green",
     excerpt:
@@ -113,8 +123,8 @@ export function BlogGrid() {
                 {articles[0].excerpt}
               </p>
               <Button
-                variant="outline"
-                className="self-start rounded-full border-afrix-blue/50 bg-transparent text-afrix-blue hover:bg-afrix-blue/10 mt-2"
+                variant="default"
+                className="self-start bg-afrix-blue text-white hover:bg-afrix-blue/70 transition-all text-sm px-5"
               >
                 Lire la suite
                 <ArrowRight className="w-4 h-4 ml-2" />
@@ -164,10 +174,11 @@ export function BlogGrid() {
                 {article.excerpt}
               </p>
               <Button
-                variant="outline"
-                className="self-start rounded-full border-white/30 bg-transparent text-white hover:bg-white/10 text-sm mt-1 px-5"
+                variant="default"
+                className="self-start bg-afrix-blue text-white hover:bg-afrix-blue/70 transition-all text-sm px-5"
               >
                 Lire plus
+                <ArrowRight className="w-4 h-4 ml-2" />
               </Button>
             </CardContent>
           </Card>

@@ -204,7 +204,7 @@ export default function FormInscription() {
                       required
                       className="hidden peer"
                     />
-                    <div className="w-5 h-5 bg-black border border-white flex items-center justify-center peer-checked:bg-afrix-blue transition-colors duration-200">
+                    <div className="w-5 h-5 bg-black border-1 border-white flex items-center justify-center peer-checked:bg-afrix-blue transition-colors duration-200">
                       <div className="w-2 h-2 bg-white hidden peer-checked:block rounded-sm"></div>
                     </div>
                     <span className="text-white text-sm">Oui</span>
@@ -218,7 +218,7 @@ export default function FormInscription() {
                       required
                       className="hidden peer"
                     />
-                    <div className="w-5 h-5 bg-black border- border-white flex items-center justify-center peer-checked:bg-afrix-blue transition-colors duration-200">
+                    <div className="w-5 h-5 bg-black border-1 border-white flex items-center justify-center peer-checked:bg-afrix-blue transition-colors duration-200">
                       <div className="w-2 h-2 bg-white hidden peer-checked:block rounded-sm"></div>
                     </div>
                     <span className="text-white text-sm">Non</span>
