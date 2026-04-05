@@ -32,7 +32,10 @@ export default function Header() {
         Passer au contenu
       </a>
       <header className="fixed inset-x-0 top-0 z-50">
-        <nav aria-label="Navigation principale" className="h-20 border-b border-white/10 bg-afrix-dark/90 backdrop-blur-md">
+        <nav
+          aria-label="Navigation principale"
+          className="h-20 border-b border-white/10 bg-afrix-dark/90 backdrop-blur-md"
+        >
           <div className="container mx-auto flex h-full items-center justify-between px-4 sm:px-6 lg:px-8">
             {/* Logo */}
             <Link
