@@ -34,7 +34,7 @@ const services = [
     borderColor: "border-afrix-blue/30",
     title: "Developpement Web",
     description:
-      "Apprenez a creez des sites et applications web modernes du front-end au back-end et realisez des projets concrets.",
+      "Nous développons des sites web modernes et performants, adaptés aux besoins spécifiques de chaque projet.",
     details: [
       "Sites vitrines et e-commerce",
       "Applications web complexes",
@@ -49,7 +49,7 @@ const services = [
     borderColor: "border-afrix-green/30",
     title: "Developpement Mobile",
     description:
-      "Apprenez a creer des applications mobiles performantes pour Android et iOS et realisez des projets concrets.",
+      "Nous développons des applications mobiles modernes et performantes, adaptées aux besoins spécifiques de chaque projet.",
     details: [
       "Applications Android natives",
       "Applications iOS natives",
@@ -64,7 +64,7 @@ const services = [
     borderColor: "border-afrix-yellow/30",
     title: "Marketing Digital",
     description:
-      "Apprenez a concevoir et gerer des campagnes en ligne efficaces et realisez des projets concrets.",
+      "Nous développons des stratégies de marketing digital efficaces, adaptées aux besoins spécifiques de chaque projet.",
     details: [
       "Strategie de contenu",
       "Referencement SEO / SEA",
@@ -79,7 +79,7 @@ const services = [
     borderColor: "border-afrix-green/30",
     title: "Consultation Informatique",
     description:
-      "Apprenez a diagnostiquer, conseiller et optimiser les systemes informatiques avec des projets concrets.",
+      "Nous proposons des services de consultation informatique adaptés aux besoins spécifiques de chaque projet.",
     details: [
       "Audit de systemes existants",
       "Conseil en architecture",
@@ -94,7 +94,7 @@ const services = [
     borderColor: "border-afrix-red/30",
     title: "Communication Visuelle",
     description:
-      "Apprenez a creer des contenus graphiques impactants et realistes pour vos projets concrets.",
+      "Nous développons des solutions de communication visuelle modernes, adaptées aux besoins spécifiques de chaque projet.",
     details: [
       "Identite visuelle",
       "Design de supports print",
@@ -109,7 +109,7 @@ const services = [
     borderColor: "border-afrix-blue/30",
     title: "Redaction de Contenus",
     description:
-      "Apprenez a produire des textes clairs et efficaces pour vos projets et supports numeriques.",
+      "Nous développons des contenus de qualité, adaptés aux besoins spécifiques de chaque projet.",
     details: [
       "Redaction web et blog",
       "Copywriting publicitaire",

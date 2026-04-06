@@ -271,13 +271,10 @@ export function AboutContent() {
               </div>
               <h3 className="text-2xl font-bold text-white">Notre Mission</h3>
               <p className="text-white/80 text-base leading-relaxed">
-                Afrix Global a pour mission de rendre l'education accessible, de
-                developper des competences cles et de favoriser l'employabilite
-                des talents africains dans l'economie digitale. Nous formons les
-                jeunes et les moins jeunes aux competences numeriques
-                essentielles, afin de renforcer leur employabilite, stimuler
-                l'entrepreneuriat et repondre aux besoins reels du marche du
-                travail.
+                Afrix Global a pour mission de rendre l’éducation accessible et
+                de former aux compétences numériques, afin de renforcer
+                l’employabilité, stimuler l’entrepreneuriat et répondre aux
+                besoins du marché africain.
               </p>
             </motion.div>
 
@@ -295,11 +292,10 @@ export function AboutContent() {
               </div>
               <h3 className="text-2xl font-bold text-white">Notre Vision</h3>
               <p className="text-white/80 text-base leading-relaxed">
-                Afrix Global vise a construire un avenir educatif inclusif et
-                innovant, ou la technologie favorise l'apprentissage,
-                l'entrepreneuriat et l'autonomisation des talents africains.
-                Nous aspirons a etre le pont entre le potentiel inexploite de
-                l'Afrique et les opportunites de l'economie numerique mondiale.
+                Afrix Global vise à construire un avenir éducatif inclusif et
+                innovant, où la technologie favorise l’apprentissage et
+                l’autonomisation des talents africains, en les connectant aux
+                opportunités de l’économie numérique.
               </p>
             </motion.div>
           </motion.div>
