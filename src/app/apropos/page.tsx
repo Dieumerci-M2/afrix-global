@@ -1,5 +1,5 @@
-import { PageHeader } from "../../components/page-header";
 import { AboutContent } from "../../components/about-content";
+import { PageHeader } from "../../components/page-header";
 
 export const metadata = {
   title: "A Propos - Afrix Global",
@@ -11,9 +11,7 @@ export default function AproposPage() {
   return (
     <>
       <PageHeader
-        title=" À Propos de"
-        highlight="Nous"
-        highlightColor="text-afrix-green"
+        title=" À Propos de Nous"
         description="Découvrez notre histoire et notre vision pour révolutionner l’éducation numérique en Afrique avec des solutions innovantes."
       />
       <AboutContent />

@@ -1,15 +1,15 @@
 "use client";
 
 /* eslint-disable react/no-unescaped-entities */
-import Image from "next/image";
-import { Card, CardContent } from "@/components/ui/card";
-import { Rocket, Globe, Target, Users, Award, Heart } from "lucide-react";
+import AnimatedCounter from "@/components/AnimatedCounter";
 import { Button } from "@/components/ui/button";
+import { CardContent } from "@/components/ui/card";
 import AboutImg from "@/public/images/about/about_section.jpg";
 import AboutImg2 from "@/public/images/about/about_section2.jpg";
-import Link from "next/link";
-import AnimatedCounter from "@/components/AnimatedCounter";
 import { motion } from "framer-motion";
+import { Award, Globe, Heart, Rocket, Target, Users } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
 
 const container = {
   hidden: {},
@@ -194,7 +194,7 @@ export function AboutContent() {
               viewport={{ once: true }}
             >
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white">
-                Notre <span className="text-afrix-blue">Histoire</span>
+                Notre Histoire
               </h2>
             </motion.div>
             <motion.p
@@ -245,8 +245,7 @@ export function AboutContent() {
             viewport={{ once: true }}
           >
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white text-center mb-12">
-              Notre <span className="text-afrix-yellow">Mission</span> &{" "}
-              <span className="text-afrix-red">Vision</span>
+              Notre Mission & Vision
             </h2>
           </motion.div>
 
@@ -317,7 +316,7 @@ export function AboutContent() {
             viewport={{ once: true }}
           >
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white text-center mb-4">
-              Nos <span className="text-afrix-green">Valeurs</span>
+              Nos Valeurs
             </h2>
             <p className="text-white/70 text-center max-w-[600px] mx-auto mb-12">
               Les principes qui guident notre action au quotidien et definissent
@@ -408,7 +407,6 @@ export function AboutContent() {
         >
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white text-center mb-4">
             Notre Equipe
-            <span className="text-afrix-green"> - Afrix Global</span>
           </h2>
           <p className="text-white/70 text-center max-w-[600px] mx-auto mb-12">
             Decouvrez l'equipe passionnee d'Afrix Global qui forme et accompagne

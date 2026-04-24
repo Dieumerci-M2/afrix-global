@@ -3,17 +3,10 @@ import { motion } from "framer-motion";
 
 interface PageHeaderProps {
   title: string;
-  highlight: string;
-  highlightColor?: string;
   description?: string;
 }
 
-export function PageHeader({
-  title,
-  highlight,
-  highlightColor = "text-afrix-blue",
-  description,
-}: PageHeaderProps) {
+export function PageHeader({ title, description }: PageHeaderProps) {
   return (
     <section
       className="relative w-full bg-afrix-dark py-20"
@@ -29,7 +22,7 @@ export function PageHeader({
         viewport={{ once: true }}
       >
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white text-balance">
-          {title} <span className={highlightColor}>{highlight}</span>
+          {title}
         </h1>
         {description && (
           <p className="text-white/70 text-base sm:text-lg max-w-175 leading-relaxed">

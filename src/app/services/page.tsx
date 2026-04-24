@@ -11,9 +11,7 @@ export default function ServicesPage() {
   return (
     <main>
       <PageHeader
-        title="Nos"
-        highlight="Services"
-        highlightColor="text-afrix-red"
+        title="Nos Services"
         description="Nous proposons une gamme complète de services numériques pour accompagner entreprises et particuliers dans leur transformation digitale."
       />
       <ServicesDetail />

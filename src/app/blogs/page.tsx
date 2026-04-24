@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import { PageHeader } from "../../components/page-header";
 import { BlogGrid } from "../../components/blog-grid";
+import { PageHeader } from "../../components/page-header";
 
 export const metadata: Metadata = {
   title: "Blog - Afrix Global",
@@ -12,9 +12,7 @@ export default function BlogPage() {
   return (
     <main>
       <PageHeader
-        title="NOTRE"
-        highlight="BLOG"
-        highlightColor="text-afrix-blue"
+        title="Notre Blog"
         description="Restez informé des dernières actualités, tendances et conseils du numérique et de la formation en Afrique."
       />
       <BlogGrid />

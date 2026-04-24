@@ -1,9 +1,9 @@
 "use client";
 
-import Image from "next/image";
-import ImgAbout2 from "@/public/images/about/about_section2.jpg";
-import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import ImgAbout2 from "@/public/images/about/about_section2.jpg";
+import Image from "next/image";
+import Link from "next/link";
 import AnimatedCounter from "../../components/AnimatedCounter";
 import { MotionContainer } from "./MotionContainer";
 
@@ -18,7 +18,7 @@ export default function AboutSection() {
       }}
     >
       <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white text-center">
-        <span className="text-afrix-green">A PROPOS DE </span> NOUS
+        A PROPOS DE NOUS
       </h2>
 
       <div className="w-[90%] lg:w-[80%] h-full  flex flex-col items-start mt-8 md:mt-0 md:flex-row gap-6 mx-auto">
@@ -44,7 +44,7 @@ export default function AboutSection() {
         </div>
 
         <div className=" full md:w-1/2 h-9/10 py-6 md:pl-12  flex  flex-col items-center md:items-start justify-between  text-slate-200">
-          <h2 className=" text-2xl md:text-4xl text-afrix-blue  font-semibold">
+          <h2 className=" text-2xl md:text-4xl text-white  font-semibold">
             Des Compétences Techniques au Service de l’Innovation
           </h2>
           <div className="my-6 md:my-12">
