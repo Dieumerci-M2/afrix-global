@@ -26,7 +26,8 @@ const articles = [
       "Un guide complet pour les debutants qui souhaitent se lancer dans le marketing digital, adapte au contexte africain et aux realites locales.",
   },
   {
-    title: "Retour sur le Tech Summit 2025",
+    title:
+      "Retour sur le Tech Summit 2025, restez informé des dernières actualités",
     image: "/images/blog/blog03.jpg",
     date: "15 Decembre 2025",
     author: "Dieumerci Muhindo",

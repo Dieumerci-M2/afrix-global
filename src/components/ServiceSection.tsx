@@ -30,42 +30,42 @@ const services = [
     color: "text-[#4285f4]",
     title: "Developpement web",
     description:
-      "Apprenez a creez des sites et applications web modernes du front-end au back-end et realisez des projets concrets.",
+      "Nous développons des sites web modernes et performants, adaptés aux besoins spécifiques de chaque projet.",
   },
   {
     icon: Smartphone,
     color: "text-[#30b43f]",
     title: "Developpement Mobile",
     description:
-      "Apprenez a creer des applications mobiles performantes pour Android et iOS et realisez des projets concrets.",
+      "Nous développons des applications mobiles modernes et performantes, adaptées aux besoins spécifiques de chaque projet.",
   },
   {
     icon: Monitor,
     color: "text-[#fbbc05]",
     title: "Marketing Digital",
     description:
-      "Apprenez a concevoir et gerer des campagnes en ligne efficaces et realisez des projets concrets.",
+      "Nous développons des stratégies de marketing digital efficaces, adaptées aux besoins spécifiques de chaque projet.",
   },
   {
     icon: Globe,
     color: "text-[#30b43f]",
     title: "Consultation Informatique",
     description:
-      "Apprenez a diagnostiquer, conseiller et optimiser les systemes informatiques avec des projets concrets.",
+      "Nous proposons des services de consultation informatique adaptés aux besoins spécifiques de chaque projet.",
   },
   {
     icon: ImageIcon,
     color: "text-[#ea4335]",
     title: "Communication visuelle",
     description:
-      "Apprenez a creer des contenus graphiques impactants et realistes pour vos projets concrets.",
+      "Nous développons des solutions de communication visuelle modernes, adaptées aux besoins spécifiques de chaque projet.",
   },
   {
     icon: PenTool,
     color: "text-[#4285f4]",
     title: "Redaction des contenus",
     description:
-      "Apprenez a produire des textes clairs et efficaces pour vos projets et supports numeriques.",
+      "Nous développons des contenus de qualité, adaptés aux besoins spécifiques de chaque projet.",
   },
 ];
 
