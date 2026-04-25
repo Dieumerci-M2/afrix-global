@@ -1,14 +1,14 @@
 "use client";
-import {
-  Code,
-  Smartphone,
-  Monitor,
-  Globe,
-  ImageIcon,
-  PenTool,
-} from "lucide-react";
 import { CardContent } from "@/components/ui/card";
 import { motion } from "framer-motion";
+import {
+  Code,
+  Globe,
+  ImageIcon,
+  Monitor,
+  PenTool,
+  Smartphone,
+} from "lucide-react";
 
 const container = {
   hidden: {},
@@ -85,7 +85,7 @@ export default function ServicesSection() {
         viewport={{ once: true }}
       >
         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold my-8 md:mb-0 md:mt-16 text-white text-center">
-          NOS <span className="text-afrix-red">SERVICES</span>
+          NOS SERVICES
         </h2>
       </motion.div>
 

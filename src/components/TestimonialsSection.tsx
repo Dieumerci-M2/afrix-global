@@ -1,10 +1,10 @@
 "use client";
 
+import { motion } from "framer-motion";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
 import { IoMdQuote } from "react-icons/io";
-import { motion } from "framer-motion";
 
 const testimonials = [
   {
@@ -85,7 +85,7 @@ export default function TestimonialsSection() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
       >
-        <h2 className="text-3xl lg:text-4xl font-bold text-afrix-yellow text-center">
+        <h2 className="text-3xl lg:text-4xl font-bold text-white text-center">
           TESTIMONIALES
         </h2>
       </motion.div>

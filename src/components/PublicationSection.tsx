@@ -1,10 +1,10 @@
 "use client";
 
-import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { CardContent } from "@/components/ui/card";
-import Link from "next/link";
 import { motion } from "framer-motion";
+import Image from "next/image";
+import Link from "next/link";
 
 const container = {
   hidden: {},
@@ -60,7 +60,7 @@ export default function PublicationSection() {
         viewport={{ once: true }}
       >
         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white text-center mb-6 sm:mb-8 lg:mb-10">
-          NOS RECENTES <span className="text-afrix-blue">PUBLICATIONS</span>
+          NOS RECENTES PUBLICATIONS
         </h2>
       </motion.div>
 

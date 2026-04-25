@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import { PageHeader } from "../../components/page-header";
 import { FormationsList } from "../../components/formations-list";
+import { PageHeader } from "../../components/page-header";
 
 export const metadata: Metadata = {
   title: "Nos Formations - Afrix Global",
@@ -12,9 +12,7 @@ export default function FormationsPage() {
   return (
     <main>
       <PageHeader
-        title="Nos"
-        highlight="Formations"
-        highlightColor="text-afrix-yellow"
+        title="Nos Formations"
         description="Des programmes de formation pratiques et complets, conçus pour vous doter des compétences les plus recherchées du marché numérique."
       />
       <FormationsList />

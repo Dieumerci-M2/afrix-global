@@ -1,11 +1,11 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
+import { Button } from "@/components/ui/button";
+import { events } from "@/lib/events-data";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
-import { ChevronLeft, ChevronRight } from "lucide-react";
-import { events } from "@/lib/events-data";
+import { useCallback, useEffect, useState } from "react";
 
 const AUTO_SCROLL_INTERVAL = 4000; // 4 seconds
 
@@ -43,7 +43,7 @@ export default function EventsSection() {
       }}
     >
       <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white text-center">
-        NOS <span className="text-afrix-yellow">EVENEMENTS</span>
+        NOS EVENEMENTS
       </h2>
 
       <div

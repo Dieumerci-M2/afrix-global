@@ -1,7 +1,7 @@
 "use client";
 
-import Image from "next/image";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const partners = [
   "https://cdn.prod.website-files.com/67290660990553e15f9b92b6/6729258180b8be5879a317bc_logoblock.svg",
@@ -27,7 +27,7 @@ export default function PartnersSection() {
         viewport={{ once: true }}
       >
         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white text-center">
-          NOS <span className="text-[#4285f4]">PARTENAIRES</span>
+          NOS PARTENAIRES
         </h2>
       </motion.div>
 
