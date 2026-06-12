@@ -2,16 +2,28 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { useRef, useState } from "react";
+import { ChevronDown, ChevronUp, Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 
-const navLinks = [
+export interface navigationLink {
+  label: string;
+  href: string;
+  children?: navigationLink[];
+}
+
+const navigation: navigationLink[] = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
-  { href: "/programs", label: "Programs" },
-  { href: "/talent-4-startups", label: "Talent 4 Startups" },
+  {
+    href: "/programs",
+    label: "Programs",
+    children: [
+      { href: "/talent-4-startups", label: "Talent 4 Startups" },
+      { href: "/baobab-dev-program", label: "Baobab dev program" },
+    ],
+  },
   { href: "/services", label: "Services" },
   { href: "/innovation-hub", label: "Innovation Hub" },
   { href: "/projects", label: "Projects" },
@@ -22,10 +34,27 @@ const navLinks = [
 export function Navbar() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
+  const [activeSubMenu, setActiveSubMenu] = useState<string | null>(null);
+  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
+
+  const handleMouseEnter = (href: string) => {
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+    }
+    setActiveSubMenu(href);
+  };
+
+  const handleMouseLeave = () => {
+    timeoutRef.current = setTimeout(() => {
+      setActiveSubMenu(null);
+    }, 200);
+  };
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border bg-background/80 backdrop-blur-xl">
-      <div className="mx-auto flex h-24 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+      <div
+        className={`mx-auto flex min-h-24 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8`}
+      >
         <Link
           href="/"
           className="flex items-center gap-2"
@@ -39,21 +68,64 @@ export function Navbar() {
           />
         </Link>
 
-        <nav className="hidden items-center gap-1 lg:flex">
-          {navLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className={cn(
-                "rounded-sm px-3 py-2 text-sm font-medium transition-colors hover:text-foreground",
-                pathname === link.href
-                  ? "text-foreground"
-                  : "text-muted-foreground",
-              )}
-            >
-              {link.label}
-            </Link>
-          ))}
+        <nav
+          className="hidden items-center gap-1 lg:flex"
+          aria-label="Main navigation"
+        >
+          {navigation.map((link) => {
+            const hasChildren = link.children && link.children.length > 0;
+            const isOpen = activeSubMenu === link.href;
+
+            return (
+              <div
+                key={link.href}
+                className={cn("relative flex items-center")}
+                onMouseEnter={() => hasChildren && handleMouseEnter(link.href)}
+                onMouseLeave={() => hasChildren && handleMouseLeave()}
+              >
+                <Link
+                  href={link.href}
+                  className={cn(
+                    "inline-flex items-center gap-1 rounded-sm px-3 py-2 text-sm font-medium transition-colors hover:text-foreground",
+                    pathname === link.href || isOpen
+                      ? "text-foreground"
+                      : "text-muted-foreground",
+                  )}
+                >
+                  {link.label}
+                  {hasChildren && (
+                    <span className="inline-flex items-center">
+                      {isOpen ? (
+                        <ChevronUp className="h-4 w-4 transition-transform duration-300" />
+                      ) : (
+                        <ChevronDown className="h-4 w-4 transition-transform duration-300" />
+                      )}
+                    </span>
+                  )}
+                </Link>
+
+                {/* SOUS-MENU DROPDOWN */}
+                {hasChildren && isOpen && (
+                  <div className="absolute left-0 top-full z-50 mt-1 w-48  bg-popover p-1 text-popover-foreground shadow-md animate-in fade-in slide-in-from-top-1 duration-150">
+                    {link.children?.map((child) => (
+                      <Link
+                        key={child.href}
+                        href={child.href}
+                        className={cn(
+                          "block rounded-sm px-2 py-1.5 text-sm text-muted-foreground hover:text-foreground transition-colors",
+                          pathname === child.href
+                            ? "text-foreground"
+                            : "text-muted-foreground",
+                        )}
+                      >
+                        {child.label}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
+            );
+          })}
         </nav>
 
         <div className="hidden items-center gap-3 lg:flex">
@@ -84,7 +156,7 @@ export function Navbar() {
       {open && (
         <div className="border-t border-border bg-background lg:hidden">
           <nav className="flex flex-col gap-1 px-4 py-4">
-            {navLinks.map((link) => (
+            {navigation.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
