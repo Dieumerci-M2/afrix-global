@@ -1,11 +1,11 @@
 "use client";
 
+import { cn } from "@/lib/utils";
+import { ChevronDown, ChevronUp, Menu, X } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useRef, useState } from "react";
-import { ChevronDown, ChevronUp, Menu, X } from "lucide-react";
-import { cn } from "@/lib/utils";
-import Image from "next/image";
 
 export interface navigationLink {
   label: string;
@@ -26,7 +26,6 @@ const navigation: navigationLink[] = [
   },
   { href: "/services", label: "Services" },
   { href: "/innovation-hub", label: "Innovation Hub" },
-  { href: "/projects", label: "Projects" },
   { href: "/impact", label: "Impact" },
   { href: "/partners", label: "Partners" },
 ];
