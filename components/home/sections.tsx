@@ -158,20 +158,20 @@ export function ServicesOverview() {
   const serviceT = useScopedI18n("home.services");
   const services = [
     {
-      title: "Digital Development",
-      desc: "Websites, mobile apps, platforms, and custom software.",
+      title: serviceT("items.dev.title"),
+      desc: serviceT("items.dev.description"),
     },
     {
-      title: "Digital Marketing",
-      desc: "Social media, campaigns, and growth strategy.",
+      title: serviceT("items.marketing.title"),
+      desc: serviceT("items.marketing.description"),
     },
     {
-      title: "Design & Communication",
-      desc: "Branding, graphic design, UI/UX, and content.",
+      title: serviceT("items.design.title"),
+      desc: serviceT("items.design.description"),
     },
     {
-      title: "Custom Solutions",
-      desc: "Internal systems, NGO solutions, and enterprise platforms.",
+      title: serviceT("items.custom.title"),
+      desc: serviceT("items.custom.description"),
     },
   ];
 
@@ -212,27 +212,27 @@ export function ServicesOverview() {
 
 /* ---------- Innovation Hub ---------- */
 export function InnovationHubFeature() {
+  const innovationT = useScopedI18n("home.innovationHub");
   return (
     <Section>
       <div className="relative overflow-hidden rounded-sm border border-border">
         <div className="grid lg:grid-cols-2">
           <div className="flex flex-col justify-center p-8 sm:p-12 lg:p-16">
-            <Eyebrow>Innovation Hub</Eyebrow>
+            <Eyebrow>{innovationT("eyebrow")}</Eyebrow>
             <h2 className="mt-4 text-3xl font-bold tracking-tight text-foreground text-balance sm:text-4xl">
-              Where ideas become scalable African startups
+              {innovationT("title")}
             </h2>
             <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-              A physical and digital ecosystem for innovation — incubation,
-              hackathons, mentorship, investor networking, and coworking.
+              {innovationT("description")}
             </p>
             <ActionLink href="/innovation-hub" className="mt-8 w-fit">
-              Join the Hub
+              {innovationT("cta")}
             </ActionLink>
           </div>
           <div className="relative min-h-64 lg:min-h-full">
             <MediaZone
               src="/images/innovation-hub.png"
-              alt="Modern African innovation hub and coworking space"
+              alt={innovationT("imageAlt")}
               aspect="h-full"
               className="rounded-none border-0 border-l border-border"
             />
@@ -244,25 +244,26 @@ export function InnovationHubFeature() {
 }
 
 /* ---------- Featured Projects ---------- */
-const featured = [
-  {
-    title: "PanAfri Pay",
-    category: "Startup Project",
-    image: "/images/projects.png",
-  },
-  {
-    title: "AgriConnect Platform",
-    category: "Client Project",
-    image: "/images/services.png",
-  },
-  {
-    title: "EduReach Mobile",
-    category: "Student Project",
-    image: "/images/training.png",
-  },
-];
 
 export function FeaturedProjects() {
+  const featuredT = useScopedI18n("home.featuredProjects");
+  const featured = [
+    {
+      title: "PanAfri Pay",
+      category: "Startup Project",
+      image: "/images/projects.png",
+    },
+    {
+      title: "AgriConnect Platform",
+      category: "Client Project",
+      image: "/images/services.png",
+    },
+    {
+      title: "EduReach Mobile",
+      category: "Student Project",
+      image: "/images/training.png",
+    },
+  ];
   return (
     <Section className="bg-card/40">
       <div className="flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-end">
