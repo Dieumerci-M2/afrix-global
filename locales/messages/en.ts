@@ -13,6 +13,36 @@ export default {
     impact: "Impact",
     partners: "Partners",
   },
+
+  footer: {
+    ecosystem: "Ecosystem",
+    company: "Company",
+    connect: "Connect",
+
+    programs: "Programs",
+    talent4Startups: "Talent 4 Startups",
+    services: "Services",
+    innovationHub: "Innovation Hub",
+
+    about: "About",
+    projects: "Projects",
+    impact: "Impact",
+    partners: "Partners",
+
+    contact: "Contact",
+    applyNow: "Apply Now",
+    becomePartner: "Become a Partner",
+    startProject: "Start a Project",
+
+    headline: "We train. We create. We connect.",
+    description:
+      "Building Africa's next generation of digital talent and startups through real-world international projects.",
+
+    socialLink: "Social link",
+
+    rights: "All rights reserved.",
+    footerTagline: "Talent · Innovation · Opportunity",
+  },
   home: {
     hero: {
       badge: "Talent · Innovation · Opportunity Ecosystem",

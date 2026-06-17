@@ -13,6 +13,36 @@ export default {
     impact: "Impact",
     partners: "Partenaires",
   },
+
+  footer: {
+    ecosystem: "Écosystème",
+    company: "Entreprise",
+    connect: "Connexion",
+
+    programs: "Programmes",
+    talent4Startups: "Talent 4 Startups",
+    services: "Services",
+    innovationHub: "Hub d'Innovation",
+
+    about: "À propos",
+    projects: "Projets",
+    impact: "Impact",
+    partners: "Partenaires",
+
+    contact: "Contact",
+    applyNow: "Postuler",
+    becomePartner: "Devenir partenaire",
+    startProject: "Démarrer un projet",
+
+    headline: "Nous formons. Nous créons. Nous connectons.",
+    description:
+      "Construire la prochaine génération africaine de talents numériques et de startups à travers des projets internationaux concrets.",
+
+    socialLink: "Lien social",
+
+    rights: "Tous droits réservés.",
+    footerTagline: "Talent · Innovation · Opportunité",
+  },
   home: {
     hero: {
       badge: "Talents · Innovation · Opportunités",
