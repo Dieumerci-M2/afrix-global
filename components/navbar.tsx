@@ -6,30 +6,43 @@ import { useRef, useState } from "react";
 import { ChevronDown, ChevronUp, Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
+import LocaleSwitcher from "./LocaleSwitcher";
+import { useScopedI18n } from "@/locales/client";
+import { getNavigation } from "./navigation";
 
-export interface navigationLink {
-  label: string;
+export interface NavigationLink {
   href: string;
-  children?: navigationLink[];
+  label: string;
+  children?: NavigationLink[];
 }
 
-const navigation: navigationLink[] = [
-  { href: "/", label: "Home" },
-  { href: "/about", label: "About" },
-  {
-    href: "/programs",
-    label: "Programs",
-    children: [
-      { href: "/talent-4-startups", label: "Talent 4 Startups" },
-      { href: "/baobab-dev-program", label: "Baobab dev program" },
-    ],
-  },
-  { href: "/services", label: "Services" },
-  { href: "/innovation-hub", label: "Innovation Hub" },
-  { href: "/projects", label: "Projects" },
-  { href: "/impact", label: "Impact" },
-  { href: "/partners", label: "Partners" },
-];
+type Translator = (key: string) => string;
+
+export function getNavigation(t: Translator): NavigationLink[] {
+  return [
+    { href: "/", label: t("home") },
+    { href: "/about", label: t("about") },
+    {
+      href: "/programs",
+      label: t("programs"),
+      children: [
+        {
+          href: "/talent-4-startups",
+          label: t("talent4Startups"),
+        },
+        {
+          href: "/baobab-dev-program",
+          label: t("baobabProgram"),
+        },
+      ],
+    },
+    { href: "/services", label: t("services") },
+    { href: "/innovation-hub", label: t("innovationHub") },
+    { href: "/projects", label: t("projects") },
+    { href: "/impact", label: t("impact") },
+    { href: "/partners", label: t("partners") },
+  ];
+}
 
 export function Navbar() {
   const pathname = usePathname();
@@ -143,6 +156,7 @@ export function Navbar() {
           </Link>
         </div>
 
+        <LocaleSwitcher />
         <button
           type="button"
           aria-label="Toggle menu"

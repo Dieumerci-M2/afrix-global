@@ -1,6 +1,18 @@
 // locales/en.ts
 
 export default {
+  navigation: {
+    home: "Home",
+    about: "About",
+    programs: "Programs",
+    talent4Startups: "Talent 4 Startups",
+    baobabProgram: "Baobab Dev Program",
+    services: "Services",
+    innovationHub: "Innovation Hub",
+    projects: "Projects",
+    impact: "Impact",
+    partners: "Partners",
+  },
   home: {
     hero: {
       badge: "Talent · Innovation · Opportunity Ecosystem",

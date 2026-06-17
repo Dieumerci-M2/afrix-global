@@ -250,17 +250,17 @@ export function FeaturedProjects() {
   const featured = [
     {
       title: "PanAfri Pay",
-      category: "Startup Project",
+      category: featuredT("categories.startup"),
       image: "/images/projects.png",
     },
     {
       title: "AgriConnect Platform",
-      category: "Client Project",
+      category: featuredT("categories.client"),
       image: "/images/services.png",
     },
     {
       title: "EduReach Mobile",
-      category: "Student Project",
+      category: featuredT("categories.student"),
       image: "/images/training.png",
     },
   ];
@@ -268,11 +268,11 @@ export function FeaturedProjects() {
     <Section className="bg-card/40">
       <div className="flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-end">
         <SectionHeading
-          eyebrow="Featured Work"
-          title="Projects built by our ecosystem"
+          eyebrow={featuredT("eyebrow")}
+          title={featuredT("title")}
         />
         <ActionLink href="/projects" variant="outline">
-          View portfolio
+          {featuredT("viewPortfolio")}
         </ActionLink>
       </div>
       <div className="mt-10 grid gap-6 md:grid-cols-3">
@@ -347,20 +347,21 @@ export function SuccessStories() {
 }
 
 /* ---------- Partners ---------- */
-const partners = [
-  "Digital Africa",
-  "TechCorp",
-  "FutureFund",
-  "InnovateNGO",
-  "GlobalReach",
-  "BuildAfrica",
-];
 
 export function PartnersStrip() {
+  const partenerT = useScopedI18n("home.partners");
+  const partners = [
+    "Digital Africa",
+    "TechCorp",
+    "FutureFund",
+    "InnovateNGO",
+    "GlobalReach",
+    "BuildAfrica",
+  ];
   return (
     <Section className="bg-card/40">
       <p className="text-center text-xs font-semibold uppercase tracking-widest text-muted-foreground">
-        Trusted by organizations advancing Africa&apos;s digital future
+        {partenerT("title")}
       </p>
       <div className="mt-8 grid grid-cols-2 gap-px overflow-hidden rounded-sm border border-border bg-border sm:grid-cols-3 lg:grid-cols-6">
         {partners.map((p) => (
