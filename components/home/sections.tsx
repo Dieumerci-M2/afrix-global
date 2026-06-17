@@ -1,16 +1,22 @@
-import { Section, SectionHeading, ActionLink, MediaZone, Eyebrow } from "@/components/site"
 import {
-  GraduationCap,
-  Rocket,
+  ActionLink,
+  Eyebrow,
+  MediaZone,
+  Section,
+  SectionHeading,
+} from "@/components/site";
+import {
+  ArrowUpRight,
+  BrainCircuit,
   Briefcase,
   Code2,
-  Smartphone,
-  BrainCircuit,
-  PenTool,
+  GraduationCap,
   Megaphone,
-  ArrowUpRight,
-} from "lucide-react"
-import Link from "next/link"
+  PenTool,
+  Rocket,
+  Smartphone,
+} from "lucide-react";
+import Link from "next/link";
 
 /* ---------- Impact Metrics ---------- */
 const metrics = [
@@ -20,7 +26,7 @@ const metrics = [
   { value: "350+", label: "Projects Delivered" },
   { value: "40+", label: "Startups Launched" },
   { value: "12", label: "Countries Reached" },
-]
+];
 
 export function ImpactMetrics() {
   return (
@@ -28,21 +34,37 @@ export function ImpactMetrics() {
       <div className="grid grid-cols-2 gap-px overflow-hidden rounded-sm border border-border bg-border sm:grid-cols-3 lg:grid-cols-6">
         {metrics.map((m) => (
           <div key={m.label} className="bg-background p-6 sm:p-8">
-            <p className="text-3xl font-bold tracking-tight text-primary sm:text-4xl">{m.value}</p>
-            <p className="mt-2 text-xs font-medium uppercase tracking-wide text-muted-foreground">{m.label}</p>
+            <p className="text-3xl font-bold tracking-tight text-primary sm:text-4xl">
+              {m.value}
+            </p>
+            <p className="mt-2 text-xs font-medium uppercase tracking-wide text-muted-foreground">
+              {m.label}
+            </p>
           </div>
         ))}
       </div>
     </Section>
-  )
+  );
 }
 
 /* ---------- Ecosystem Overview ---------- */
 const pillars = [
-  { icon: GraduationCap, title: "We Train", desc: "Industry-grade bootcamps that build job-ready digital professionals." },
-  { icon: Rocket, title: "We Create", desc: "We build startups and execute real projects with global impact." },
-  { icon: Briefcase, title: "We Connect", desc: "We deploy talent on international projects and opportunities." },
-]
+  {
+    icon: GraduationCap,
+    title: "We Train",
+    desc: "Industry-grade bootcamps that build job-ready digital professionals.",
+  },
+  {
+    icon: Rocket,
+    title: "We Create",
+    desc: "We build startups and execute real projects with global impact.",
+  },
+  {
+    icon: Briefcase,
+    title: "We Connect",
+    desc: "We deploy talent on international projects and opportunities.",
+  },
+];
 
 export function Ecosystem() {
   return (
@@ -61,21 +83,25 @@ export function Ecosystem() {
                   <p.icon className="h-5 w-5 text-primary" />
                 </div>
                 <div>
-                  <h3 className="text-base font-semibold text-foreground">{p.title}</h3>
-                  <p className="mt-1 text-sm leading-relaxed text-muted-foreground">{p.desc}</p>
+                  <h3 className="text-base font-semibold text-foreground">
+                    {p.title}
+                  </h3>
+                  <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
+                    {p.desc}
+                  </p>
                 </div>
               </div>
             ))}
           </div>
         </div>
         <MediaZone
-          src="/images/ecosystem.png"
+          src="/images/ecosystem.jpg"
           alt="African startup founder presenting to a team in an innovation hub"
           aspect="aspect-[4/5]"
         />
       </div>
     </Section>
-  )
+  );
 }
 
 /* ---------- Programs Overview ---------- */
@@ -85,7 +111,7 @@ const programs = [
   { icon: BrainCircuit, title: "Data & AI" },
   { icon: PenTool, title: "UI/UX Design" },
   { icon: Megaphone, title: "Digital Marketing" },
-]
+];
 
 export function ProgramsOverview() {
   return (
@@ -109,29 +135,47 @@ export function ProgramsOverview() {
           >
             <p.icon className="h-6 w-6 text-primary" />
             <div className="flex items-center justify-between">
-              <span className="text-sm font-semibold text-foreground">{p.title}</span>
+              <span className="text-sm font-semibold text-foreground">
+                {p.title}
+              </span>
               <ArrowUpRight className="h-4 w-4 text-muted-foreground transition-colors group-hover:text-primary" />
             </div>
           </Link>
         ))}
       </div>
     </Section>
-  )
+  );
 }
 
 /* ---------- Services Overview ---------- */
 const services = [
-  { title: "Digital Development", desc: "Websites, mobile apps, platforms, and custom software." },
-  { title: "Digital Marketing", desc: "Social media, campaigns, and growth strategy." },
-  { title: "Design & Communication", desc: "Branding, graphic design, UI/UX, and content." },
-  { title: "Custom Solutions", desc: "Internal systems, NGO solutions, and enterprise platforms." },
-]
+  {
+    title: "Digital Development",
+    desc: "Websites, mobile apps, platforms, and custom software.",
+  },
+  {
+    title: "Digital Marketing",
+    desc: "Social media, campaigns, and growth strategy.",
+  },
+  {
+    title: "Design & Communication",
+    desc: "Branding, graphic design, UI/UX, and content.",
+  },
+  {
+    title: "Custom Solutions",
+    desc: "Internal systems, NGO solutions, and enterprise platforms.",
+  },
+];
 
 export function ServicesOverview() {
   return (
     <Section className="bg-card/40">
       <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
-        <MediaZone src="/images/services.png" alt="African UI/UX designer working across dual monitors" aspect="aspect-[4/3]" />
+        <MediaZone
+          src="/images/service.jpg"
+          alt="African UI/UX designer working across dual monitors"
+          aspect="aspect-[4/3]"
+        />
         <div>
           <SectionHeading
             eyebrow="Services"
@@ -141,8 +185,12 @@ export function ServicesOverview() {
           <div className="mt-8 grid gap-px overflow-hidden rounded-sm border border-border bg-border sm:grid-cols-2">
             {services.map((s) => (
               <div key={s.title} className="bg-background p-6">
-                <h3 className="text-sm font-semibold text-foreground">{s.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{s.desc}</p>
+                <h3 className="text-sm font-semibold text-foreground">
+                  {s.title}
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                  {s.desc}
+                </p>
               </div>
             ))}
           </div>
@@ -152,7 +200,7 @@ export function ServicesOverview() {
         </div>
       </div>
     </Section>
-  )
+  );
 }
 
 /* ---------- Innovation Hub ---------- */
@@ -167,8 +215,8 @@ export function InnovationHubFeature() {
               Where ideas become scalable African startups
             </h2>
             <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-              A physical and digital ecosystem for innovation — incubation, hackathons, mentorship, investor networking,
-              and coworking.
+              A physical and digital ecosystem for innovation — incubation,
+              hackathons, mentorship, investor networking, and coworking.
             </p>
             <ActionLink href="/innovation-hub" className="mt-8 w-fit">
               Join the Hub
@@ -176,7 +224,7 @@ export function InnovationHubFeature() {
           </div>
           <div className="relative min-h-64 lg:min-h-full">
             <MediaZone
-              src="/images/innovation-hub.png"
+              src="/images/innovation.jpg"
               alt="Modern African innovation hub and coworking space"
               aspect="h-full"
               className="rounded-none border-0 border-l border-border"
@@ -185,42 +233,61 @@ export function InnovationHubFeature() {
         </div>
       </div>
     </Section>
-  )
+  );
 }
 
-/* ---------- Featured Projects ---------- */
-const featured = [
-  { title: "PanAfri Pay", category: "Startup Project", image: "/images/projects.png" },
-  { title: "AgriConnect Platform", category: "Client Project", image: "/images/services.png" },
-  { title: "EduReach Mobile", category: "Student Project", image: "/images/training.png" },
-]
+// /* ---------- Featured Projects ---------- */
+// const featured = [
+//   {
+//     title: "PanAfri Pay",
+//     category: "Startup Project",
+//     image: "/images/projects.png",
+//   },
+//   {
+//     title: "AgriConnect Platform",
+//     category: "Client Project",
+//     image: "/images/services.png",
+//   },
+//   {
+//     title: "EduReach Mobile",
+//     category: "Student Project",
+//     image: "/images/training.png",
+//   },
+// ];
 
-export function FeaturedProjects() {
-  return (
-    <Section className="bg-card/40">
-      <div className="flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-end">
-        <SectionHeading eyebrow="Featured Work" title="Projects built by our ecosystem" />
-        <ActionLink href="/projects" variant="outline">
-          View portfolio
-        </ActionLink>
-      </div>
-      <div className="mt-10 grid gap-6 md:grid-cols-3">
-        {featured.map((p) => (
-          <Link key={p.title} href="/projects" className="group">
-            <MediaZone src={p.image} alt={p.title} aspect="aspect-[4/3]" />
-            <div className="mt-4 flex items-center justify-between">
-              <div>
-                <p className="text-xs font-medium uppercase tracking-wide text-primary">{p.category}</p>
-                <h3 className="mt-1 text-base font-semibold text-foreground">{p.title}</h3>
-              </div>
-              <ArrowUpRight className="h-4 w-4 text-muted-foreground transition-colors group-hover:text-primary" />
-            </div>
-          </Link>
-        ))}
-      </div>
-    </Section>
-  )
-}
+// export function FeaturedProjects() {
+//   return (
+//     <Section className="bg-card/40">
+//       <div className="flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-end">
+//         <SectionHeading
+//           eyebrow="Featured Work"
+//           title="Projects built by our ecosystem"
+//         />
+//         <ActionLink href="/projects" variant="outline">
+//           View portfolio
+//         </ActionLink>
+//       </div>
+//       <div className="mt-10 grid gap-6 md:grid-cols-3">
+//         {featured.map((p) => (
+//           <Link key={p.title} href="/projects" className="group">
+//             <MediaZone src={p.image} alt={p.title} aspect="aspect-[4/3]" />
+//             <div className="mt-4 flex items-center justify-between">
+//               <div>
+//                 <p className="text-xs font-medium uppercase tracking-wide text-primary">
+//                   {p.category}
+//                 </p>
+//                 <h3 className="mt-1 text-base font-semibold text-foreground">
+//                   {p.title}
+//                 </h3>
+//               </div>
+//               <ArrowUpRight className="h-4 w-4 text-muted-foreground transition-colors group-hover:text-primary" />
+//             </div>
+//           </Link>
+//         ))}
+//       </div>
+//     </Section>
+//   );
+// }
 
 /* ---------- Success Stories ---------- */
 const stories = [
@@ -231,24 +298,32 @@ const stories = [
     role: "Full-Stack Developer, Lagos",
   },
   {
-    quote: "The Innovation Hub gave my startup the mentorship and network we needed to raise our first round.",
+    quote:
+      "The Innovation Hub gave my startup the mentorship and network we needed to raise our first round.",
     name: "Thabo Molefe",
     role: "Founder, PanAfri Pay",
   },
   {
-    quote: "As a freelancer in the Talent 4 Startups network, I now work with clients across three continents.",
+    quote:
+      "As a freelancer in the Talent 4 Startups network, I now work with clients across three continents.",
     name: "Fatima Diallo",
     role: "Product Designer, Dakar",
   },
-]
+];
 
 export function SuccessStories() {
   return (
     <Section>
-      <SectionHeading eyebrow="Success Stories" title="Real journeys, real outcomes" />
+      <SectionHeading
+        eyebrow="Success Stories"
+        title="Real journeys, real outcomes"
+      />
       <div className="mt-10 grid gap-px overflow-hidden rounded-sm border border-border bg-border md:grid-cols-3">
         {stories.map((s) => (
-          <figure key={s.name} className="flex flex-col justify-between gap-8 bg-background p-8">
+          <figure
+            key={s.name}
+            className="flex flex-col justify-between gap-8 bg-background p-8"
+          >
             <blockquote className="text-base leading-relaxed text-foreground text-pretty">
               &ldquo;{s.quote}&rdquo;
             </blockquote>
@@ -260,11 +335,18 @@ export function SuccessStories() {
         ))}
       </div>
     </Section>
-  )
+  );
 }
 
 /* ---------- Partners ---------- */
-const partners = ["Digital Africa", "TechCorp", "FutureFund", "InnovateNGO", "GlobalReach", "BuildAfrica"]
+const partners = [
+  "Digital Africa",
+  "TechCorp",
+  "FutureFund",
+  "InnovateNGO",
+  "GlobalReach",
+  "BuildAfrica",
+];
 
 export function PartnersStrip() {
   return (
@@ -274,11 +356,16 @@ export function PartnersStrip() {
       </p>
       <div className="mt-8 grid grid-cols-2 gap-px overflow-hidden rounded-sm border border-border bg-border sm:grid-cols-3 lg:grid-cols-6">
         {partners.map((p) => (
-          <div key={p} className="flex items-center justify-center bg-background p-6">
-            <span className="text-sm font-semibold tracking-tight text-muted-foreground">{p}</span>
+          <div
+            key={p}
+            className="flex items-center justify-center bg-background p-6"
+          >
+            <span className="text-sm font-semibold tracking-tight text-muted-foreground">
+              {p}
+            </span>
           </div>
         ))}
       </div>
     </Section>
-  )
+  );
 }
