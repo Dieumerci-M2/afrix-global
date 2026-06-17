@@ -1,5 +1,5 @@
-import Image from "next/image"
-import { ActionLink } from "@/components/site"
+import { ActionLink } from "@/components/site";
+import Image from "next/image";
 
 export function Hero() {
   return (
@@ -8,14 +8,18 @@ export function Hero() {
         <div>
           <div className="inline-flex items-center gap-2 rounded-sm border border-border px-3 py-1">
             <span className="h-1.5 w-1.5 rounded-sm bg-primary" />
-            <span className="text-xs font-medium text-muted-foreground">Talent · Innovation · Opportunity Ecosystem</span>
+            <span className="text-xs font-medium text-muted-foreground">
+              Talent · Innovation · Opportunity Ecosystem
+            </span>
           </div>
           <h1 className="mt-6 text-4xl font-bold leading-[1.05] tracking-tight text-foreground text-balance sm:text-5xl lg:text-6xl">
-            Building Africa&apos;s Next Generation of Digital Talent & Innovation
+            Building Africa&apos;s Next Generation of Digital Talent &
+            Innovation
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground text-pretty">
-            Afrix Global is a Talent, Innovation & Opportunity Ecosystem that trains, creates, and connects African
-            digital talent to global opportunities.
+            Afrix Global is a Talent, Innovation & Opportunity Ecosystem that
+            trains, creates, and connects African digital talent to global
+            opportunities.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <ActionLink href="/programs">Join Baobab Program</ActionLink>
@@ -34,7 +38,7 @@ export function Hero() {
 
         <div className="relative aspect-[5/4] overflow-hidden rounded-sm border border-border lg:aspect-[4/3]">
           <Image
-            src="/images/hero-main.png"
+            src="/images/hero.jpg"
             alt="Young African digital professionals collaborating in a modern tech office"
             fill
             priority
@@ -44,5 +48,5 @@ export function Hero() {
         </div>
       </div>
     </section>
-  )
+  );
 }

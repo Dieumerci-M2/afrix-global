@@ -1,15 +1,15 @@
-import { Hero } from "@/components/home/hero"
+import { Hero } from "@/components/home/hero";
 import {
   ImpactMetrics,
   Ecosystem,
   ProgramsOverview,
   ServicesOverview,
   InnovationHubFeature,
-  FeaturedProjects,
+  // FeaturedProjects,
   SuccessStories,
   PartnersStrip,
-} from "@/components/home/sections"
-import { CtaBand } from "@/components/site"
+} from "@/components/home/sections";
+import { CtaBand } from "@/components/site";
 
 export default function HomePage() {
   return (
@@ -20,7 +20,7 @@ export default function HomePage() {
       <ProgramsOverview />
       <ServicesOverview />
       <InnovationHubFeature />
-      <FeaturedProjects />
+      {/* <FeaturedProjects /> */}
       <SuccessStories />
       <PartnersStrip />
       <CtaBand
@@ -30,5 +30,5 @@ export default function HomePage() {
         secondary={{ href: "/contact", label: "Talk to us" }}
       />
     </>
-  )
+  );
 }
