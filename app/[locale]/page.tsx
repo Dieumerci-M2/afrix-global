@@ -1,4 +1,4 @@
-import { Hero } from "@/components/home/hero"
+import { Hero } from "@/components/home/hero";
 import {
   ImpactMetrics,
   Ecosystem,
@@ -8,10 +8,12 @@ import {
   FeaturedProjects,
   SuccessStories,
   PartnersStrip,
-} from "@/components/home/sections"
-import { CtaBand } from "@/components/site"
+} from "@/components/home/sections";
+import { CtaBand } from "@/components/site";
+import { getScopedI18n } from "@/locales/server";
 
-export default function HomePage() {
+export default async function HomePage() {
+  const t = await getScopedI18n("home.cta");
   return (
     <>
       <Hero />
@@ -24,11 +26,17 @@ export default function HomePage() {
       <SuccessStories />
       <PartnersStrip />
       <CtaBand
-        title="Ready to build Africa's digital future?"
-        description="Whether you want to train, hire talent, or launch a startup — the Afrix Global ecosystem is your launchpad."
-        primary={{ href: "/programs", label: "Join Baobab Program" }}
-        secondary={{ href: "/contact", label: "Talk to us" }}
+        title={t("title")}
+        description={t("description")}
+        primary={{
+          href: "/programs",
+          label: t("primary"),
+        }}
+        secondary={{
+          href: "/contact",
+          label: t("secondary"),
+        }}
       />
     </>
-  )
+  );
 }

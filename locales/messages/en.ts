@@ -177,5 +177,12 @@ export default {
     partners: {
       title: "Trusted by organizations advancing Africa's digital future",
     },
+    cta: {
+      title: "Ready to build Africa's digital future?",
+      description:
+        "Whether you want to train, hire talent, or launch a startup — the Afrix Global ecosystem is your launchpad.",
+      primary: "Join Baobab Program",
+      secondary: "Talk to us",
+    },
   },
 } as const;

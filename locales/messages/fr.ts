@@ -180,5 +180,12 @@ export default {
       title:
         "Ils nous font confiance pour construire l'avenir numérique de l'Afrique",
     },
+    cta: {
+      title: "Prêt à construire l'avenir numérique de l'Afrique ?",
+      description:
+        "Que vous souhaitiez vous former, recruter des talents ou lancer une startup, l'écosystème Afrix Global est votre tremplin.",
+      primary: "Rejoindre le Programme Baobab",
+      secondary: "Parlez-nous",
+    },
   },
 } as const;
