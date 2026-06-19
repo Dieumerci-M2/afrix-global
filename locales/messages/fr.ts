@@ -286,6 +286,96 @@ export default {
     },
   },
 
+  programs: {
+    hero: {
+      eyebrow: "Le Programme Baobab",
+      title:
+        "Des programmes digitaux qui transforment les carrières et répondent aux standards du marché mondial",
+      description:
+        "Le Programme Baobab forme les talents africains grâce à un apprentissage intensif basé sur la pratique, puis les déploie sur de véritables projets internationaux. À l’image du baobab, nous construisons des racines solides pour une croissance durable.",
+      applyNow: "Postuler maintenant",
+      talent4Startups: "Talent 4 Startups",
+    },
+
+    imageAlt: "Participants en formation lors d’un bootcamp Afrix Global",
+
+    tracksSection: {
+      eyebrow: "Parcours",
+      title: "Cinq spécialisations. Une infinité d’opportunités.",
+    },
+
+    tracks: {
+      web: {
+        title: "Développement Web",
+        description:
+          "Concevez des applications web modernes, robustes et prêtes pour la production avec les technologies les plus demandées du marché.",
+      },
+
+      mobile: {
+        title: "Développement Mobile",
+        description:
+          "Créez des applications mobiles multiplateformes performantes, de l’idée initiale jusqu’à leur publication.",
+      },
+
+      ai: {
+        title: "Data & Intelligence Artificielle",
+        description:
+          "Transformez les données en opportunités grâce à l’analyse, au machine learning et aux outils d’intelligence artificielle.",
+      },
+
+      design: {
+        title: "Design UI/UX",
+        description:
+          "Concevez des expériences numériques intuitives et engageantes fondées sur les besoins réels des utilisateurs.",
+      },
+
+      marketing: {
+        title: "Marketing Digital",
+        description:
+          "Développez la croissance des entreprises grâce au marketing de performance, au contenu et à la stratégie de marque.",
+      },
+    },
+
+    methodologySection: {
+      eyebrow: "Méthodologie",
+      title: "Comment nous préparons des talents prêts pour l’emploi",
+    },
+
+    methodology: {
+      bootcamps: {
+        title: "Bootcamps Intensifs",
+        description:
+          "Un apprentissage immersif et exigeant animé par des professionnels de l’industrie.",
+      },
+
+      mentorship: {
+        title: "Mentorat",
+        description:
+          "Un accompagnement personnalisé assuré par des experts expérimentés.",
+      },
+
+      projects: {
+        title: "Projets Réels",
+        description:
+          "Travaillez sur de véritables projets internationaux et développez une expérience concrète du terrain.",
+      },
+
+      certification: {
+        title: "Certification",
+        description:
+          "Obtenez des certifications valorisées par les employeurs et partenaires à l’échelle internationale.",
+      },
+    },
+
+    cta: {
+      title: "Votre carrière commence ici",
+      description:
+        "Les candidatures pour la prochaine cohorte du Programme Baobab sont ouvertes. Formez-vous auprès des meilleurs, travaillez sur des projets réels et lancez votre carrière à l’international.",
+      primary: "Postuler maintenant",
+      secondary: "Découvrir les réalisations des étudiants",
+    },
+  },
+
   partners: {
     hero: {
       eyebrow: "Partenaires",
