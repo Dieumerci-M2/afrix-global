@@ -185,4 +185,184 @@ export default {
       secondary: "Talk to us",
     },
   },
+  partners: {
+    hero: {
+      eyebrow: "Partners",
+      title: "Together, we accelerate Africa's digital transformation",
+      description:
+        "We partner with organizations that share our belief in African talent — from foundations and NGOs to tech companies and institutions.",
+    },
+
+    network: {
+      eyebrow: "Our Network",
+      title: "The organizations behind the ecosystem",
+    },
+
+    groups: {
+      digitalAfrica: {
+        title: "Digital Africa",
+        description:
+          "Continental partners advancing digital infrastructure and inclusion.",
+      },
+
+      ngos: {
+        title: "NGOs",
+        description:
+          "Mission-driven organizations creating opportunity at scale.",
+      },
+
+      techCompanies: {
+        title: "Tech Companies",
+        description:
+          "Industry leaders providing tools, projects, and pathways to talent.",
+      },
+
+      institutions: {
+        title: "Institutions",
+        description:
+          "Universities and bodies aligned on education and innovation.",
+      },
+
+      foundations: {
+        title: "Foundations",
+        description:
+          "Funders investing in Africa's next generation of builders.",
+      },
+    },
+
+    cta: {
+      title: "Become a partner",
+      description:
+        "Support Africa's digital transformation. Let's build the future of talent and innovation together.",
+      primary: "Become a Partner",
+      secondary: "See our impact",
+    },
+  },
+  programs: {
+    hero: {
+      eyebrow: "The Baobab Program",
+      title: "Career-defining digital programs built for the global market",
+      description:
+        "The Baobab Program trains African talent through intensive, project-based learning — then deploys them on real international work. Like the baobab tree, we build deep roots and lasting growth.",
+      applyNow: "Apply Now",
+      talent4Startups: "Talent 4 Startups",
+    },
+
+    imageAlt: "Students learning during an Afrix Global bootcamp",
+
+    tracksSection: {
+      eyebrow: "Tracks",
+      title: "Five career tracks. Endless opportunity.",
+    },
+
+    tracks: {
+      web: {
+        title: "Web Development",
+        description:
+          "Build production-ready web applications with modern frameworks and best practices.",
+      },
+      mobile: {
+        title: "Mobile Development",
+        description:
+          "Ship cross-platform mobile apps that users love, from concept to app store.",
+      },
+      ai: {
+        title: "Data & AI",
+        description:
+          "Turn data into intelligence with machine learning, analytics, and AI tooling.",
+      },
+      design: {
+        title: "UI/UX Design",
+        description:
+          "Design intuitive, beautiful digital products grounded in user research.",
+      },
+      marketing: {
+        title: "Digital Marketing",
+        description:
+          "Drive growth through performance marketing, content, and brand strategy.",
+      },
+    },
+
+    methodologySection: {
+      eyebrow: "Methodology",
+      title: "How we build job-ready talent",
+    },
+
+    methodology: {
+      bootcamps: {
+        title: "Bootcamps",
+        description:
+          "Intensive, immersive learning led by industry practitioners.",
+      },
+      mentorship: {
+        title: "Mentorship",
+        description: "One-on-one guidance from experienced professionals.",
+      },
+      projects: {
+        title: "Real Projects",
+        description: "Work on live international projects, not just exercises.",
+      },
+      certification: {
+        title: "Certification",
+        description: "Earn credentials recognized by global employers.",
+      },
+    },
+
+    cta: {
+      title: "Your career starts here",
+      description:
+        "Applications for the next Baobab cohort are open. Train with the best, deploy on real projects, and launch your global career.",
+      primary: "Apply Now",
+      secondary: "See student work",
+    },
+  },
+  projects: {
+    hero: {
+      eyebrow: "Portfolio",
+      title: "Real projects, real impact",
+      description:
+        "From client engagements to startups and prototypes — explore the work built by the Afrix Global ecosystem.",
+    },
+
+    cta: {
+      title: "Have a project in mind?",
+      description:
+        "Partner with the talent and teams behind this work to build your next digital product.",
+      primary: "Start Your Project",
+      secondary: "Explore services",
+    },
+  },
+  contact: {
+    hero: {
+      eyebrow: "Contact",
+      title: "Let's build something together",
+      description:
+        "Whether you want to train, hire talent, start a project, or partner with us — we'd love to hear from you.",
+    },
+
+    info: {
+      email: {
+        title: "Email",
+        lines: ["hello@afrixglobal.com", "partnerships@afrixglobal.com"],
+      },
+
+      office: {
+        title: "Office",
+        lines: ["Innovation Hub, Tech District", "Open Mon–Fri, 9am–6pm"],
+      },
+    },
+
+    socials: {
+      followUs: "Follow us",
+      linkedin: "LinkedIn",
+      github: "GitHub",
+      x: "X",
+    },
+
+    card: {
+      title: "We train. We create. We connect.",
+      description:
+        "Building Africa's next generation of digital talent and innovation.",
+    },
+  },
 } as const;

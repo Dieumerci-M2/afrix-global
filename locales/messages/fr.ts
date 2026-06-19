@@ -188,4 +188,110 @@ export default {
       secondary: "Parlez-nous",
     },
   },
+  partners: {
+    hero: {
+      eyebrow: "Partenaires",
+      title:
+        "Ensemble, nous accélérons la transformation numérique de l'Afrique",
+      description:
+        "Nous collaborons avec des organisations qui partagent notre conviction du potentiel des talents africains : fondations, ONG, entreprises technologiques et institutions.",
+    },
+
+    network: {
+      eyebrow: "Notre Réseau",
+      title: "Les organisations qui soutiennent l'écosystème",
+    },
+
+    groups: {
+      digitalAfrica: {
+        title: "Afrique Numérique",
+        description:
+          "Des partenaires continentaux qui favorisent l'inclusion et les infrastructures numériques.",
+      },
+
+      ngos: {
+        title: "ONG",
+        description:
+          "Des organisations engagées qui créent des opportunités à grande échelle.",
+      },
+
+      techCompanies: {
+        title: "Entreprises Technologiques",
+        description:
+          "Des leaders du secteur offrant outils, projets et opportunités aux talents.",
+      },
+
+      institutions: {
+        title: "Institutions",
+        description:
+          "Universités et organismes engagés pour l'éducation et l'innovation.",
+      },
+
+      foundations: {
+        title: "Fondations",
+        description:
+          "Des bailleurs investissant dans la prochaine génération de bâtisseurs africains.",
+      },
+    },
+
+    cta: {
+      title: "Devenez partenaire",
+      description:
+        "Soutenez la transformation numérique de l'Afrique. Construisons ensemble l'avenir du talent et de l'innovation.",
+      primary: "Devenir Partenaire",
+      secondary: "Voir notre impact",
+    },
+  },
+  projects: {
+    hero: {
+      eyebrow: "Portfolio",
+      title: "Des projets réels, un impact réel",
+      description:
+        "Des missions clients aux startups et prototypes innovants — découvrez les réalisations de l’écosystème Afrix Global.",
+    },
+
+    cta: {
+      title: "Vous avez un projet en tête ?",
+      description:
+        "Collaborez avec les talents et les équipes à l’origine de ces réalisations pour construire votre prochain produit numérique.",
+      primary: "Lancer votre projet",
+      secondary: "Découvrir nos services",
+    },
+  },
+  contact: {
+    hero: {
+      eyebrow: "Contact",
+      title: "Construisons quelque chose ensemble",
+      description:
+        "Que vous souhaitiez vous former, recruter des talents, lancer un projet ou devenir partenaire, nous serions ravis d'échanger avec vous.",
+    },
+
+    info: {
+      email: {
+        title: "Email",
+        lines: ["hello@afrixglobal.com", "partnerships@afrixglobal.com"],
+      },
+
+      office: {
+        title: "Bureau",
+        lines: [
+          "Innovation Hub, Tech District",
+          "Ouvert du lundi au vendredi, de 9h à 18h",
+        ],
+      },
+    },
+
+    socials: {
+      followUs: "Suivez-nous",
+      linkedin: "LinkedIn",
+      github: "GitHub",
+      x: "X",
+    },
+
+    card: {
+      title: "Nous formons. Nous créons. Nous connectons.",
+      description:
+        "Construire la prochaine génération de talents numériques et d'innovations en Afrique.",
+    },
+  },
 } as const;
