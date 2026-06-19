@@ -253,6 +253,61 @@ export default {
     },
   },
 
+  impact: {
+    hero: {
+      eyebrow: "Impact",
+      title: "Measurable change across the continent",
+      description:
+        "Our impact isn't theoretical. It's careers launched, startups built, and opportunity created at scale across Africa.",
+    },
+    metrics: {
+      eyebrow: "By the numbers",
+      title: "The Afrix Global ecosystem in figures",
+      items: [
+        { value: "5,000+", label: "Youth Trained" },
+        { value: "1,200+", label: "Jobs Created" },
+        { value: "800+", label: "Freelancers Active" },
+        { value: "350+", label: "Projects Delivered" },
+        { value: "40+", label: "Startups Launched" },
+        { value: "12", label: "Countries Reached" },
+      ],
+    },
+    community: {
+      alt: "Afrix Global community celebrating impact",
+    },
+    journeys: {
+      eyebrow: "Alumni Journeys",
+      title: "Stories behind the numbers",
+      items: [
+        {
+          name: "Amara Okeke",
+          role: "Full-Stack Developer",
+          story:
+            "Joined the Baobab web track with no coding background. Today she leads engineering at an international fintech.",
+        },
+        {
+          name: "Thabo Molefe",
+          role: "Founder, PanAfri Pay",
+          story:
+            "Incubated his payments startup at the Innovation Hub and raised a pre-seed round within a year.",
+        },
+        {
+          name: "Fatima Diallo",
+          role: "Product Designer",
+          story:
+            "Now designs products for clients across three continents through the Talent 4 Startups network.",
+        },
+      ],
+    },
+    cta: {
+      title: "Be part of the next milestone",
+      description:
+        "Every number represents a life changed. Join us in building Africa's digital future.",
+      primary: "Join a Program",
+      secondary: "Partner with us",
+    },
+  },
+
   partners: {
     hero: {
       eyebrow: "Partners",

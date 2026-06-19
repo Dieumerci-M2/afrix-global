@@ -376,6 +376,60 @@ export default {
     },
   },
 
+  impact: {
+    hero: {
+      eyebrow: "Impact",
+      title: "Un changement mesurable à travers le continent",
+      description:
+        "Notre impact n'est pas théorique. Ce sont des carrières lancées, des startups créées et des opportunités générées à grande échelle à travers l'Afrique.",
+    },
+    metrics: {
+      eyebrow: "En chiffres",
+      title: "L'écosystème Afrix Global en chiffres",
+      items: [
+        { value: "5 000+", label: "Jeunes formés" },
+        { value: "1 200+", label: "Emplois créés" },
+        { value: "800+", label: "Freelancers actifs" },
+        { value: "350+", label: "Projets livrés" },
+        { value: "40+", label: "Startups lancées" },
+        { value: "12", label: "Pays atteints" },
+      ],
+    },
+    community: {
+      alt: "La communauté Afrix Global célébrant son impact",
+    },
+    journeys: {
+      eyebrow: "Parcours d'Alumni",
+      title: "Des histoires derrière les chiffres",
+      items: [
+        {
+          name: "Amara Okeke",
+          role: "Développeuse Full-Stack",
+          story:
+            "A rejoint le programme web Baobab sans aucune base en code. Aujourd'hui, elle dirige l'ingénierie dans une fintech internationale.",
+        },
+        {
+          name: "Thabo Molefe",
+          role: "Fondateur, PanAfri Pay",
+          story:
+            "A incubé sa startup de paiement à l'Innovation Hub et a levé une levée de fonds pré-seed en un an.",
+        },
+        {
+          name: "Fatima Diallo",
+          role: "Product Designer",
+          story:
+            "Conçoit désormais des produits pour des clients sur trois continents grâce au réseau Talent 4 Startups.",
+        },
+      ],
+    },
+    cta: {
+      title: "Faites partie de la prochaine étape",
+      description:
+        "Chaque chiffre représente une vie changée. Rejoignez-nous pour construire l'avenir numérique de l'Afrique.",
+      primary: "Rejoindre un programme",
+      secondary: "Devenir partenaire",
+    },
+  },
   partners: {
     hero: {
       eyebrow: "Partenaires",
