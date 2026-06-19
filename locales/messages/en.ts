@@ -333,36 +333,42 @@ export default {
     },
   },
   contact: {
-    hero: {
-      eyebrow: "Contact",
-      title: "Let's build something together",
-      description:
-        "Whether you want to train, hire talent, start a project, or partner with us — we'd love to hear from you.",
-    },
+    form: {
+      submit: "Send Message",
 
-    info: {
-      email: {
-        title: "Email",
-        lines: ["hello@afrixglobal.com", "partnerships@afrixglobal.com"],
+      success: {
+        title: "Message received",
+        description:
+          "Thank you for reaching out to Afrix Global. Our team will get back to you shortly.",
+        button: "Send another message",
       },
 
-      office: {
-        title: "Office",
-        lines: ["Innovation Hub, Tech District", "Open Mon–Fri, 9am–6pm"],
+      fields: {
+        name: {
+          label: "Full Name",
+          placeholder: "Your name",
+        },
+
+        email: {
+          label: "Email",
+          placeholder: "you@email.com",
+        },
+
+        organization: {
+          label: "Organization",
+          placeholder: "Company / NGO (optional)",
+        },
+
+        subject: {
+          label: "Subject",
+          placeholder: "How can we help?",
+        },
+
+        message: {
+          label: "Message",
+          placeholder: "Tell us about your project, goals, or questions...",
+        },
       },
-    },
-
-    socials: {
-      followUs: "Follow us",
-      linkedin: "LinkedIn",
-      github: "GitHub",
-      x: "X",
-    },
-
-    card: {
-      title: "We train. We create. We connect.",
-      description:
-        "Building Africa's next generation of digital talent and innovation.",
     },
   },
 } as const;

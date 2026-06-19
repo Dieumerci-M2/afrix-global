@@ -259,39 +259,43 @@ export default {
     },
   },
   contact: {
-    hero: {
-      eyebrow: "Contact",
-      title: "Construisons quelque chose ensemble",
-      description:
-        "Que vous souhaitiez vous former, recruter des talents, lancer un projet ou devenir partenaire, nous serions ravis d'échanger avec vous.",
-    },
+    form: {
+      submit: "Envoyer le message",
 
-    info: {
-      email: {
-        title: "Email",
-        lines: ["hello@afrixglobal.com", "partnerships@afrixglobal.com"],
+      success: {
+        title: "Message reçu",
+        description:
+          "Merci d'avoir contacté Afrix Global. Notre équipe vous répondra dans les plus brefs délais.",
+        button: "Envoyer un autre message",
       },
 
-      office: {
-        title: "Bureau",
-        lines: [
-          "Innovation Hub, Tech District",
-          "Ouvert du lundi au vendredi, de 9h à 18h",
-        ],
+      fields: {
+        name: {
+          label: "Nom complet",
+          placeholder: "Votre nom",
+        },
+
+        email: {
+          label: "Email",
+          placeholder: "vous@email.com",
+        },
+
+        organization: {
+          label: "Organisation",
+          placeholder: "Entreprise / ONG (optionnel)",
+        },
+
+        subject: {
+          label: "Sujet",
+          placeholder: "Comment pouvons-nous vous aider ?",
+        },
+
+        message: {
+          label: "Message",
+          placeholder:
+            "Parlez-nous de votre projet, de vos objectifs ou de vos questions...",
+        },
       },
-    },
-
-    socials: {
-      followUs: "Suivez-nous",
-      linkedin: "LinkedIn",
-      github: "GitHub",
-      x: "X",
-    },
-
-    card: {
-      title: "Nous formons. Nous créons. Nous connectons.",
-      description:
-        "Construire la prochaine génération de talents numériques et d'innovations en Afrique.",
     },
   },
 } as const;
