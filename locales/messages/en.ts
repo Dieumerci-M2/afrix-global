@@ -185,6 +185,74 @@ export default {
       secondary: "Talk to us",
     },
   },
+
+  about: {
+    hero: {
+      eyebrow: "About Afrix Global",
+      title: "An ecosystem for talent, innovation, and opportunity",
+      description:
+        "We are building Africa's next generation of digital talent and startups.",
+    },
+    mission: {
+      title: "Our Mission",
+      imageAlt: "Team",
+      points: [
+        "Train digital professionals.",
+        "Create real-world opportunities.",
+        "Build startups.",
+        "Connect talent globally.",
+      ],
+    },
+    vision: {
+      title: "Our Vision",
+      description: "...",
+      imageAlt: "Community",
+    },
+    differentiators: {
+      title: "What makes us different",
+      items: [
+        "We deploy talent",
+        "We build startups",
+        "We execute real projects globally",
+      ],
+    },
+    timeline: {
+      eyebrow: "Our Journey",
+      title: "From bootcamp to global ecosystem",
+      items: [
+        { year: "2021", title: "The Beginning", desc: "..." },
+        { year: "2022", title: "Talent 4 Startups", desc: "..." },
+        { year: "2023", title: "Innovation Hub", desc: "..." },
+        { year: "2024", title: "Going Global", desc: "..." },
+      ],
+    },
+    leadership: {
+      eyebrow: "Leadership",
+      title: "The people building the ecosystem",
+      people: [
+        { name: "Kwame Mensah", role: "CEO" },
+        { name: "Aïcha Traoré", role: "Programs" },
+        { name: "David Achebe", role: "Innovation Hub" },
+        { name: "Lerato Khumalo", role: "Partnerships" },
+      ],
+    },
+    impact: {
+      eyebrow: "Our Impact",
+      metrics: [
+        { value: "5,000+", label: "Youth Trained" },
+        { value: "40+", label: "Startups Launched" },
+        { value: "12", label: "Countries Reached" },
+        { value: "350+", label: "Projects Delivered" },
+      ],
+    },
+    cta: {
+      title: "Join the movement",
+      description: "Be part of Africa's next generation of digital talent.",
+      primary: "Explore Programs",
+      secondary: "Partner with us",
+    },
+  },
+
   partners: {
     hero: {
       eyebrow: "Partners",

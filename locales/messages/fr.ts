@@ -188,6 +188,104 @@ export default {
       secondary: "Parlez-nous",
     },
   },
+
+  about: {
+    hero: {
+      eyebrow: "À propos d’Afrix Global",
+      title: "Un écosystème de talents, d’innovation et d’opportunités",
+      description:
+        "Nous construisons la prochaine génération de talents numériques et de startups en Afrique.",
+    },
+    mission: {
+      title: "Notre mission",
+      imageAlt: "Équipe Afrix Global",
+      points: [
+        "Former des professionnels du digital.",
+        "Créer de vraies opportunités professionnelles.",
+        "Construire des startups innovantes.",
+        "Connecter les talents africains au monde.",
+      ],
+    },
+    vision: {
+      title: "Notre vision",
+      description:
+        "Devenir le principal écosystème africain de talents digitaux, d’innovation et de création d’opportunités.",
+      imageAlt: "Communauté Afrix Global",
+    },
+    differentiators: {
+      title: "Ce qui nous différencie",
+      items: [
+        "Nous ne formons pas seulement des talents, nous les déployons.",
+        "Nous construisons des startups.",
+        "Nous exécutons de vrais projets à l’échelle internationale.",
+      ],
+    },
+    timeline: {
+      eyebrow: "Notre parcours",
+      title: "Du bootcamp à un écosystème global",
+      items: [
+        {
+          year: "2021",
+          title: "Les débuts",
+          desc: "Lancement des premiers bootcamps de formation digitale.",
+        },
+        {
+          year: "2022",
+          title: "Talent 4 Startups",
+          desc: "Connexion des talents formés à des projets de startups internationales.",
+        },
+        {
+          year: "2023",
+          title: "Innovation Hub",
+          desc: "Ouverture de notre écosystème physique et digital d’innovation.",
+        },
+        {
+          year: "2024",
+          title: "Expansion mondiale",
+          desc: "Déploiement de talents dans plus de 12 pays sur des projets réels.",
+        },
+      ],
+    },
+    leadership: {
+      eyebrow: "Leadership",
+      title: "Les personnes qui construisent l’écosystème",
+      people: [
+        {
+          name: "Kwame Mensah",
+          role: "Fondateur & CEO",
+        },
+        {
+          name: "Aïcha Traoré",
+          role: "Responsable des programmes",
+        },
+        {
+          name: "David Achebe",
+          role: "Directeur Innovation Hub",
+        },
+        {
+          name: "Lerato Khumalo",
+          role: "Responsable partenariats",
+        },
+      ],
+    },
+    impact: {
+      eyebrow: "Notre impact",
+      metrics: [
+        { value: "5,000+", label: "Jeunes formés" },
+        { value: "40+", label: "Startups lancées" },
+        { value: "12", label: "Pays atteints" },
+        { value: "350+", label: "Projets livrés" },
+      ],
+    },
+    cta: {
+      title: "Rejoignez le mouvement",
+      description:
+        "Faites partie de la prochaine génération de talents digitaux africains.",
+      primary: "Découvrir les programmes",
+      secondary: "Devenir partenaire",
+    },
+  },
+
   partners: {
     hero: {
       eyebrow: "Partenaires",
