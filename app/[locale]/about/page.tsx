@@ -59,7 +59,7 @@ export default async function AboutPage() {
           </div>
 
           <MediaZone
-            src="/images/team.png"
+            src="/images/about1.jpg"
             alt={t("mission.imageAlt")}
             aspect="aspect-[4/3]"
           />
@@ -70,7 +70,7 @@ export default async function AboutPage() {
       <Section className="bg-card/40">
         <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
           <MediaZone
-            src="/images/community.png"
+            src="/images/vision.jpg"
             alt={t("vision.imageAlt")}
             aspect="aspect-[4/3]"
             className="lg:order-2"
@@ -142,37 +142,6 @@ export default async function AboutPage() {
               </div>
             </div>
           ))}
-        </div>
-      </Section>
-
-      {/* LEADERSHIP */}
-      <Section>
-        <SectionHeading
-          eyebrow={t("leadership.eyebrow")}
-          title={t("leadership.title")}
-        />
-
-        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {leaderIndexes.map((index) => {
-            const name = t(`leadership.people.${index}.name`);
-            return (
-              <div key={index}>
-                <MediaZone
-                  src="/images/talent.png"
-                  alt={name}
-                  aspect="aspect-[4/5]"
-                />
-
-                <h3 className="mt-4 text-base font-semibold text-foreground">
-                  {name}
-                </h3>
-
-                <p className="text-sm text-muted-foreground">
-                  {t(`leadership.people.${index}.role`)}
-                </p>
-              </div>
-            );
-          })}
         </div>
       </Section>
 

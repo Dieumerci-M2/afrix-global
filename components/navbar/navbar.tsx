@@ -37,7 +37,6 @@ export function Navbar() {
     },
     { href: "/services", label: t("services") },
     { href: "/innovation-hub", label: t("innovationHub") },
-    { href: "/projects", label: t("projects") },
     { href: "/impact", label: t("impact") },
     { href: "/partners", label: t("partners") },
   ];

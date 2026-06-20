@@ -9,7 +9,6 @@ export default {
     baobabProgram: "Programme Baobab",
     services: "Services",
     innovationHub: "Hub d'Innovation",
-    projects: "Projets",
     impact: "Impact",
     partners: "Partenaires",
   },
