@@ -444,42 +444,38 @@ export default {
     },
   },
   contact: {
-    form: {
-      submit: "Send Message",
+    hero: {
+      eyebrow: "Contact",
+      title: "Let's build something together",
+      description:
+        "Whether you want to train, hire talent, start a project, or partner with us — we'd love to hear from you.",
+    },
 
-      success: {
-        title: "Message received",
-        description:
-          "Thank you for reaching out to Afrix Global. Our team will get back to you shortly.",
-        button: "Send another message",
+    info: {
+      email: {
+        title: "Email",
       },
-
-      fields: {
-        name: {
-          label: "Full Name",
-          placeholder: "Your name",
-        },
-
-        email: {
-          label: "Email",
-          placeholder: "you@email.com",
-        },
-
-        organization: {
-          label: "Organization",
-          placeholder: "Company / NGO (optional)",
-        },
-
-        subject: {
-          label: "Subject",
-          placeholder: "How can we help?",
-        },
-
-        message: {
-          label: "Message",
-          placeholder: "Tell us about your project, goals, or questions...",
-        },
+      office: {
+        title: "Office",
+        line1: "Innovation Hub, Tech District",
+        line2: "Open Mon–Fri, 9am–6pm",
       },
+    },
+
+    socials: {
+      title: "Follow us",
+    },
+
+    card: {
+      title: "We train. We create. We connect.",
+      description:
+        "Building Africa's next generation of digital talent and innovation.",
+    },
+
+    metadata: {
+      title: "Contact — Afrix Global",
+      description:
+        "Get in touch with Afrix Global. Train, hire talent, start a project, or become a partner.",
     },
   },
 } as const;
